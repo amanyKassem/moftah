@@ -98,8 +98,7 @@ html[lang="en"] {
 }
 
 ::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
+  width: 3px;
   @include mixins.transition(background 0.3s ease-in-out);
 }
 
@@ -114,8 +113,18 @@ html[lang="en"] {
 .w-fit {
   width: fit-content;
 }
+.w-90 {
+  width: 90%;
+}
+.p-20-80 {
+  padding: 20px 80px;
+}
 .bs-none {
   box-shadow: none !important;
+}
+
+.fw-500 {
+  font-weight: 500;
 }
 
 .btn {
@@ -299,6 +308,9 @@ h6 {
   min-width: auto !important;
 }
 
+.fs-16 {
+  font-size: 16px;
+}
 .fs-14 {
   font-size: 14px;
 }
@@ -311,6 +323,16 @@ h6 {
 .fs-70 {
   font-size: 70px;
 }
+.fs-5 {
+  font-size: 1.1rem !important;
+}
+
+h1 {
+  &.fs-5 {
+    font-size: 1.4rem !important;
+  }
+}
+
 .pagination {
   .page-link {
     color: map_get(colors.$theme-colors, secondary);
@@ -363,8 +385,7 @@ img.lazyload:not([src]) {
   height: 40px;
   @include mixins.border-radius(3px);
   background: #fff;
-  font-size: 13px;
-  color: map_get(colors.$theme-colors, grayLight);
+  font-size: 14px;
 
   &:focus {
     box-shadow: none;
@@ -507,6 +528,7 @@ textarea {
 
 .icon-btn {
   @include mixins.shape(35px, 50%);
+  min-width: unset !important;
   position: relative;
   line-height: 37px;
   background-color: #fff;
@@ -674,6 +696,10 @@ html[lang="en"] {
   border-inline-start: 2px solid #ddd;
 }
 
+.breadcrumb {
+  font-size: 16px;
+}
+
 /* end common style*/
 
 /* Start nav */
@@ -819,6 +845,131 @@ html[lang="en"] {
 }
 
 /* end whatsapp */
+
+/* start upload multi images */
+.upload-multi-imgs {
+  .img-block {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    @include mixins.border-radius(15px);
+
+    &.multiple {
+      height: 80px;
+      aspect-ratio: 1/1;
+      @extend .flex-center;
+      border: 1px dashed #bdbdbd;
+      color: #bdbdbd;
+
+      .uploud_label {
+        @extend .flex-center;
+        font-size: 20px;
+      }
+    }
+
+    .hidden-upload {
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+
+  .uploaded__area {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .file_ {
+      height: 80px;
+      aspect-ratio: 1/1;
+      @include mixins.border-radius(15px);
+      background-color: map_get(colors.$theme-colors, grayLightClr);
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        @include mixins.border-radius(15px);
+        background-color: map_get(colors.$theme-colors, grayLightClr);
+      }
+
+      video {
+        width: 100%;
+        height: 100%;
+        @include mixins.border-radius(15px);
+        background-color: map_get(colors.$theme-colors, grayLightClr);
+      }
+
+      .docs_file {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: map_get(colors.$theme-colors, primary);
+        font-size: 30px;
+        position: relative;
+        background-color: map_get(colors.$theme-colors, grayLightClr);
+      }
+
+      .play-button {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .remove_media {
+        @include mixins.shape(20px, 50%);
+        @extend .flex-center;
+        min-width: unset;
+        font-size: 9px;
+        padding: 0;
+        background-color: map_get(colors.$theme-colors, primary);
+        color: #fff;
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        @include mixins.transition(all 0.3s cubic-bezier(0, 0.11, 0.4, 1.29));
+
+        &:hover {
+          background-color: #fff;
+          color: map_get(colors.$theme-colors, primary);
+        }
+      }
+    }
+
+    .float_input {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: 0;
+      z-index: 5;
+      cursor: pointer;
+    }
+
+    .update_images {
+      position: relative;
+    }
+  }
+}
+
+/* end upload multi images */
 
 /* start product */
 
@@ -972,11 +1123,21 @@ html[lang="en"] {
     font-size: 40px;
   }
 
-  .fs-6 {
+  .fs-6,
+  h5 {
     font-size: 1rem !important;
   }
-  .fs-5 {
+  h1 {
+    &.fs-5 {
+      font-size: 1rem !important;
+    }
+  }
+  .fs-5,
+  h6 , .fs-16 {
     font-size: 14px !important;
+  }
+  h3 {
+    font-size: 15px !important;
   }
 
   .fs-14,
@@ -990,13 +1151,22 @@ html[lang="en"] {
     font-size: 12px;
   }
 
-  .w-25 {
+  .w-25,
+  .w-75,
+  .w-90 {
     width: 100% !important;
+  }
+
+  .p-20-80 {
+    padding: 10;
   }
   .btn {
     min-width: 160px;
   }
-
+  .breadcrumb {
+    line-height: 1.8;
+    font-size: 14px;
+  }
   .border-md-start {
     border-inline-start: 0;
   }
@@ -1087,6 +1257,12 @@ html[lang="en"] {
 
   .vector {
     height: 180px;
+  }
+
+  .whatsapp {
+    img {
+      width: 35px;
+    }
   }
 
   footer {

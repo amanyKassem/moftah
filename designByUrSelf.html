@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<!-- if english add lang="en" dir="ltr" -->
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Home</title>
+    <link rel="shortcut icon" href="assets/img/logo.svg" />
+
+    <!-- bootstrap 5 if english -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- bootstrap 5 if arabic -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      async
+    />
+
+    <link
+      rel="stylesheet"
+      media="all"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--  Start nav  -->
+    <nav class="normal-nav">
+      <div class="container">
+        <div
+          class="menu-bar d-flex d-md-none justify-content-between align-items-center"
+        >
+          <a href="index.html">
+            <img
+              src="assets/img/logo.svg"
+              data-src="assets/img/logo.svg"
+              class="logo lazyload"
+              alt="logo"
+            />
+          </a>
+          <div class="toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="menu d-flex flex-wrap align-items-center">
+          <a href="index.html" class="d-none d-md-block">
+            <img
+              src="assets/img/logo.svg"
+              data-src="assets/img/logo.svg"
+              class="logo lazyload"
+              alt="moftah"
+            />
+          </a>
+
+          <ul class="menu-links">
+            <li>
+              <a href="index.html">الرئيسية</a>
+            </li>
+            <li>
+              <a href="ourDesigns.html">تصاميمنا</a>
+            </li>
+            <li>
+              <a href="priceOffers.html">عرض سعر</a>
+            </li>
+            <li class="active">
+              <a href="designByUrSelf.html">صمم بنفسك</a>
+            </li>
+            <li>
+              <a href="myOrders.html">طلباتي</a>
+            </li>
+            <li>
+              <a href="myPurchases.html">مشترياتي</a>
+            </li>
+            <li>
+              <a href="joinUs.html">انضم إلينا</a>
+            </li>
+          </ul>
+
+          <div
+            class="user-info d-flex align-items-center justify-content-between flex-wrap"
+          >
+            <!-- if not logged in -->
+            <!-- <a href="login.html" class="login-btn fs-13">
+              <img src="assets/img/user.svg" class="me-2" alt="user" />
+              تسجيل دخول
+            </a> -->
+            <!-- if logged in -->
+            <a href="cart.html" class="icon-btn">
+              <img src="assets/img/cart.svg" alt="cart" />
+            </a>
+
+            <a href="notifications.html" class="icon-btn mx-3">
+              <img src="assets/img/bell.svg" alt="notifications" />
+              <span class="pulse"></span>
+            </a>
+
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle no-arrow icon-btn"
+                href="#"
+                role="button"
+                id="user"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="assets/img/user.svg" alt="user info" />
+              </a>
+
+              <ul class="dropdown-menu fs-13" aria-labelledby="user">
+                <li>
+                  <a class="dropdown-item" href="profile.html">الملف الشخصي</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="chat.html">محادثاتي</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="wallet.html">المحفظة</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="fav.html">المفضلة</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="settings.html">الاعدادات</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-danger" href="login.html"
+                    >تسجيل خروج</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--end nav-->
+
+    <!-- start page unique content -->
+    <main>
+      <!-- start header -->
+      <header class="py-4">
+        <div class="container">
+          <div
+            class="d-flex align-items-center justify-content-between flex-wrap"
+          >
+            <div aria-label="breadcrumb">
+              <ol class="breadcrumb mb-3">
+                <li class="breadcrumb-item">
+                  <a href="index.html" class="text-midGrey">
+                    <img
+                      src="assets/img/home.svg"
+                      width="18"
+                      alt="home"
+                      class="me-2"
+                    />
+                    الصفحة الرئيسية</a
+                  >
+                </li>
+                <li
+                  class="breadcrumb-item active text-black"
+                  aria-current="page"
+                >
+                  <h1 class="fs-16 fw-500 d-inline-block">صمم منزلك بنفسك</h1>
+                </li>
+              </ol>
+            </div>
+
+            <div class="d-flex align-items-center flex-wrap">
+              <a
+                href="ourDesigns.html"
+                class="btn btn-lightPrimary me-3 mw-auto"
+              >
+                تصاميم أخرى
+              </a>
+              <a href="priceOffers.html" class="btn btn-lightSecondary mw-auto">
+                اطلب عرض سعر
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+
+      <!-- start design by urself -->
+
+      <section class="py-5 mt-3 linear-gradient">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 d-flex justify-content-center">
+              <img
+                src="assets/img/designUrself.svg"
+                alt="vector"
+                class="vector mb-4 mb-md-0"
+              />
+            </div>
+            <div class="col-md-6">
+              <h3 class="mb-3 text-white fw-500">صمم منزلك بنفسك</h3>
+              <p class="text-white lh-lg mb-3 fs-18">
+                تستطيع تصميم منزلك بنفسك واختيار كل شيء ما علينا سوى تنفيذ ما
+                تطلب
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h3 class="mb-3 fw-500 fs-5 text-black">صمم منزلك بنفسك</h3>
+              <form action="">
+                <label class="form-label mb-3 text-black">نوع البحث</label>
+                <div class="radios d-flex align-items-center flex-wrap">
+                  <div class="form-check me-5 mb-3">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="identical"
+                      checked
+                    />
+                    <label class="form-check-label" for="identical">
+                      بحث مطابق
+                    </label>
+                  </div>
+                  <div class="form-check me-5 mb-3">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="same"
+                    />
+                    <label class="form-check-label" for="same">
+                      بحث مشابه
+                    </label>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="type" class="form-label">النوع</label>
+
+                  <select
+                    id="type"
+                    class="select2 w-100"
+                    data-placeholder="اختر النوع"
+                  >
+                    <option label="اختر النوع"></option>
+                    <option value="type">النوع</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="space" class="form-label">المساحة</label>
+                  <div class="d-flex align-items-center">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="from"
+                      placeholder="من"
+                    />
+
+                    <input
+                      type="text"
+                      class="form-control ms-2"
+                      id="to"
+                      placeholder="إلى"
+                    />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="height" class="form-label">طول الأرض</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="height"
+                    placeholder="أدخل طول الأرض"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="width" class="form-label">عرض الأرض</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="width"
+                    placeholder="أدخل عرض الأرض"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="rooms" class="form-label">عدد غرف النوم</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="rooms"
+                    placeholder="أدخل عدد غرف النوم"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="master" class="form-label"
+                    >عدد الغرف الماستر</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="master"
+                    placeholder="أدخل عدد الغرف الماستر"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="front" class="form-label">الواجهات</label>
+
+                  <select
+                    id="front"
+                    class="select2 w-100"
+                    data-placeholder="اختر الواجهات"
+                  >
+                    <option label="اختر الواجهات"></option>
+                    <option value="front">واجهه</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="street-width" class="form-label"
+                    >عرض الشارع الرئيسي</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="street-width"
+                    placeholder="أدخل عرض الشارع الرئيسي"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="pattern" class="form-label">نمط التصميم</label>
+
+                  <select
+                    id="pattern"
+                    class="select2 w-100"
+                    data-placeholder="اختر نمط التصميم"
+                  >
+                    <option label="اختر نمط التصميم"></option>
+                    <option value="pattern">نمط</option>
+                  </select>
+                </div>
+
+                <label class="form-label mb-3 text-black">هل يوجد مصعد؟</label>
+                <div class="radios d-flex align-items-center flex-wrap">
+                  <div class="form-check me-5 mb-3">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault2"
+                      id="yes"
+                      checked
+                    />
+                    <label class="form-check-label" for="yes"> نعم </label>
+                  </div>
+                  <div class="form-check me-5 mb-3">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault2"
+                      id="no"
+                    />
+                    <label class="form-check-label" for="no"> لا </label>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="code" class="form-label">كود البناء</label>
+
+                  <select
+                    id="code"
+                    class="select2 w-100"
+                    data-placeholder="اختر كود البناء"
+                  >
+                    <option label="اختر كود البناء"></option>
+                    <option value="code">112</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="bathrooms" class="form-label">عدد الحمامات</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="bathrooms"
+                    placeholder="أدخل عدد الحمامات"
+                  />
+                </div>
+
+                <label class="form-label mb-3 text-black"
+                  >هل يوجد حمام سباحة؟</label
+                >
+                <div class="radios d-flex align-items-center flex-wrap">
+                  <div class="form-check me-5 mb-3">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault3"
+                      id="yes2"
+                      checked
+                    />
+                    <label class="form-check-label" for="yes2"> نعم </label>
+                  </div>
+                  <div class="form-check me-5 mb-3">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault3"
+                      id="no2"
+                    />
+                    <label class="form-check-label" for="no2"> لا </label>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="garden" class="form-label">نوع الحديقة</label>
+
+                  <select
+                    id="garden"
+                    class="select2 w-100"
+                    data-placeholder="اختر نوع الحديقة"
+                  >
+                    <option label="اختر نوع الحديقة"></option>
+                    <option value="garden">حديقة</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="floors" class="form-label">عدد الطوابق</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floors"
+                    placeholder="أدخل عدد الطوابق"
+                  />
+                </div>
+
+                <div class="d-flex align-items-center mb-3">
+                  <label class="form-check-label me-2" for="more">المزيد</label>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="more" />
+                  </div>
+                </div>
+
+                <div class="hidden-more">
+                  <div class="mb-3">
+                    <label for="normal-rooms" class="form-label"
+                      >عدد غرف النوم العادية</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="normal-rooms"
+                      placeholder="أدخل عدد غرف النوم العادية"
+                    />
+                  </div>
+
+                  <label class="form-label mb-3 text-black">
+                    هل يوجد غرفة نوم في الطابق الأرضي؟
+                  </label>
+                  <div class="radios d-flex align-items-center flex-wrap">
+                    <div class="form-check me-5 mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault4"
+                        id="yes3"
+                        checked
+                      />
+                      <label class="form-check-label" for="yes3"> نعم </label>
+                    </div>
+                    <div class="form-check me-5 mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault4"
+                        id="no3"
+                      />
+                      <label class="form-check-label" for="no3"> لا </label>
+                    </div>
+                  </div>
+
+                  <label class="form-label mb-3 text-black">
+                    هل يوجد غرفة سائق؟
+                  </label>
+                  <div class="radios d-flex align-items-center flex-wrap">
+                    <div class="form-check me-5 mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault5"
+                        id="yes4"
+                        checked
+                      />
+                      <label class="form-check-label" for="yes4"> نعم </label>
+                    </div>
+                    <div class="form-check me-5 mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault5"
+                        id="no4"
+                      />
+                      <label class="form-check-label" for="no4"> لا </label>
+                    </div>
+                  </div>
+
+                  <label class="form-label mb-3 text-black">
+                    هل يوجد غرفة خادمة في الدور الأرضي؟
+                  </label>
+                  <div class="radios d-flex align-items-center flex-wrap">
+                    <div class="form-check me-5 mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault6"
+                        id="yes5"
+                        checked
+                      />
+                      <label class="form-check-label" for="yes5"> نعم </label>
+                    </div>
+                    <div class="form-check me-5 mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault6"
+                        id="no5"
+                      />
+                      <label class="form-check-label" for="no5"> لا </label>
+                    </div>
+                  </div>
+
+                  <label class="form-label mb-3 text-black">
+                    هل يوجد غرفة خادمة في الدور العلوي؟
+                  </label>
+                  <div class="radios d-flex align-items-center flex-wrap">
+                    <div class="form-check me-5 mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault7"
+                        id="yes6"
+                        checked
+                      />
+                      <label class="form-check-label" for="yes6"> نعم </label>
+                    </div>
+                    <div class="form-check me-5 mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault7"
+                        id="no6"
+                      />
+                      <label class="form-check-label" for="no6"> لا </label>
+                    </div>
+                  </div>
+
+                  <label class="form-label mb-3 text-black">
+                    هل يوجد درج جانبي؟
+                  </label>
+                  <div class="radios d-flex align-items-center flex-wrap">
+                    <div class="form-check me-5 mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault8"
+                        id="yes7"
+                        checked
+                      />
+                      <label class="form-check-label" for="yes7"> نعم </label>
+                    </div>
+                    <div class="form-check me-5 mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault8"
+                        id="no7"
+                      />
+                      <label class="form-check-label" for="no7"> لا </label>
+                    </div>
+                  </div>
+
+                  <label class="form-label mb-3 text-black">
+                    هل يوجد شقة في الدور العلوي؟
+                  </label>
+                  <div class="radios d-flex align-items-center flex-wrap">
+                    <div class="form-check me-5 mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault9"
+                        id="yes8"
+                        checked
+                      />
+                      <label class="form-check-label" for="yes8"> نعم </label>
+                    </div>
+                    <div class="form-check me-5 mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault9"
+                        id="no8"
+                      />
+                      <label class="form-check-label" for="no8"> لا </label>
+                    </div>
+                  </div>
+
+                  <label class="form-label mb-3 text-black">
+                    هل يوجد مطبخ مفتوح؟
+                  </label>
+                  <div class="radios d-flex align-items-center flex-wrap">
+                    <div class="form-check me-5 mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault10"
+                        id="yes9"
+                        checked
+                      />
+                      <label class="form-check-label" for="yes9"> نعم </label>
+                    </div>
+                    <div class="form-check me-5 mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault10"
+                        id="no9"
+                      />
+                      <label class="form-check-label" for="no9"> لا </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center flex-wrap">
+                  <button
+                    type="submit"
+                    class="btn btn-primary mw-auto mb-3 flex-grow-1 mx-1"
+                  >
+                    تأكيد
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary mw-auto mb-3 flex-grow-1 mx-1"
+                    data-bs-dismiss="modal"
+                  >
+                    حذف الفلتر
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="product">
+                    <span class="side-badge bg-secondary text-white"
+                      >الأكثر مبيعا</span
+                    >
+
+                    <div class="side-options">
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2"
+                      >
+                        <img src="assets/img/cart.svg" alt="cart" />
+                      </button>
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2 toggle-fav text-secondary"
+                      >
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2"
+                      >
+                        <img src="assets/img/share.svg" alt="share" />
+                      </button>
+                    </div>
+
+                    <div class="owl-carousel product-carusel overflow-hidden">
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product1.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product2.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product3.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                    </div>
+
+                    <a href="product.html" class="info bg-white d-block">
+                      <div
+                        class="d-flex align-items-center justify-content-between flex-wrap px-4 border-bottom py-1"
+                      >
+                        <h6 class="fw-normal fs-14 text-secondary my-2">
+                          تصميم فيلا
+                        </h6>
+                        <span class="text-primary my-2 fs-13">250.00 ريال</span>
+                      </div>
+                      <div
+                        class="py-2 px-4 d-flex align-items-center justify-content-between flex-wrap"
+                      >
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="assets/img/space.svg"
+                            class="space-icon"
+                            alt="icon"
+                          />
+                          <span class="text-black ms-2 fs-13">المساحات:</span>
+                        </div>
+                        <div class="spaces d-flex align-items-center flex-wrap">
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            200
+                          </div>
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            220
+                          </div>
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            240
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="product">
+                    <span class="side-badge bg-secondary text-white"
+                      >الأكثر مبيعا</span
+                    >
+
+                    <div class="side-options">
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2"
+                      >
+                        <img src="assets/img/cart.svg" alt="cart" />
+                      </button>
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2 toggle-fav text-secondary"
+                      >
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2"
+                      >
+                        <img src="assets/img/share.svg" alt="share" />
+                      </button>
+                    </div>
+
+                    <div class="owl-carousel product-carusel overflow-hidden">
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product1.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product2.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product3.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                    </div>
+
+                    <a href="product.html" class="info bg-white d-block">
+                      <div
+                        class="d-flex align-items-center justify-content-between flex-wrap px-4 border-bottom py-1"
+                      >
+                        <h6 class="fw-normal fs-14 text-secondary my-2">
+                          تصميم فيلا
+                        </h6>
+                        <span class="text-primary my-2 fs-13">250.00 ريال</span>
+                      </div>
+                      <div
+                        class="py-2 px-4 d-flex align-items-center justify-content-between flex-wrap"
+                      >
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="assets/img/space.svg"
+                            class="space-icon"
+                            alt="icon"
+                          />
+                          <span class="text-black ms-2 fs-13">المساحات:</span>
+                        </div>
+                        <div class="spaces d-flex align-items-center flex-wrap">
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            200
+                          </div>
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            220
+                          </div>
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            240
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="product">
+                    <span class="side-badge bg-secondary text-white"
+                      >الأكثر مبيعا</span
+                    >
+
+                    <div class="side-options">
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2"
+                      >
+                        <img src="assets/img/cart.svg" alt="cart" />
+                      </button>
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2 toggle-fav text-secondary"
+                      >
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2"
+                      >
+                        <img src="assets/img/share.svg" alt="share" />
+                      </button>
+                    </div>
+
+                    <div class="owl-carousel product-carusel overflow-hidden">
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product1.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product2.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product3.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                    </div>
+
+                    <a href="product.html" class="info bg-white d-block">
+                      <div
+                        class="d-flex align-items-center justify-content-between flex-wrap px-4 border-bottom py-1"
+                      >
+                        <h6 class="fw-normal fs-14 text-secondary my-2">
+                          تصميم فيلا
+                        </h6>
+                        <span class="text-primary my-2 fs-13">250.00 ريال</span>
+                      </div>
+                      <div
+                        class="py-2 px-4 d-flex align-items-center justify-content-between flex-wrap"
+                      >
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="assets/img/space.svg"
+                            class="space-icon"
+                            alt="icon"
+                          />
+                          <span class="text-black ms-2 fs-13">المساحات:</span>
+                        </div>
+                        <div class="spaces d-flex align-items-center flex-wrap">
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            200
+                          </div>
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            220
+                          </div>
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            240
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="product">
+                    <span class="side-badge bg-secondary text-white"
+                      >الأكثر مبيعا</span
+                    >
+
+                    <div class="side-options">
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2"
+                      >
+                        <img src="assets/img/cart.svg" alt="cart" />
+                      </button>
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2 toggle-fav text-secondary"
+                      >
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2"
+                      >
+                        <img src="assets/img/share.svg" alt="share" />
+                      </button>
+                    </div>
+
+                    <div class="owl-carousel product-carusel overflow-hidden">
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product1.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product2.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product3.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                    </div>
+
+                    <a href="product.html" class="info bg-white d-block">
+                      <div
+                        class="d-flex align-items-center justify-content-between flex-wrap px-4 border-bottom py-1"
+                      >
+                        <h6 class="fw-normal fs-14 text-secondary my-2">
+                          تصميم فيلا
+                        </h6>
+                        <span class="text-primary my-2 fs-13">250.00 ريال</span>
+                      </div>
+                      <div
+                        class="py-2 px-4 d-flex align-items-center justify-content-between flex-wrap"
+                      >
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="assets/img/space.svg"
+                            class="space-icon"
+                            alt="icon"
+                          />
+                          <span class="text-black ms-2 fs-13">المساحات:</span>
+                        </div>
+                        <div class="spaces d-flex align-items-center flex-wrap">
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            200
+                          </div>
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            220
+                          </div>
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            240
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="product">
+                    <span class="side-badge bg-secondary text-white"
+                      >الأكثر مبيعا</span
+                    >
+
+                    <div class="side-options">
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2"
+                      >
+                        <img src="assets/img/cart.svg" alt="cart" />
+                      </button>
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2 toggle-fav text-secondary"
+                      >
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2"
+                      >
+                        <img src="assets/img/share.svg" alt="share" />
+                      </button>
+                    </div>
+
+                    <div class="owl-carousel product-carusel overflow-hidden">
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product1.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product2.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product3.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                    </div>
+
+                    <a href="product.html" class="info bg-white d-block">
+                      <div
+                        class="d-flex align-items-center justify-content-between flex-wrap px-4 border-bottom py-1"
+                      >
+                        <h6 class="fw-normal fs-14 text-secondary my-2">
+                          تصميم فيلا
+                        </h6>
+                        <span class="text-primary my-2 fs-13">250.00 ريال</span>
+                      </div>
+                      <div
+                        class="py-2 px-4 d-flex align-items-center justify-content-between flex-wrap"
+                      >
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="assets/img/space.svg"
+                            class="space-icon"
+                            alt="icon"
+                          />
+                          <span class="text-black ms-2 fs-13">المساحات:</span>
+                        </div>
+                        <div class="spaces d-flex align-items-center flex-wrap">
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            200
+                          </div>
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            220
+                          </div>
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            240
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="product">
+                    <span class="side-badge bg-secondary text-white"
+                      >الأكثر مبيعا</span
+                    >
+
+                    <div class="side-options">
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2"
+                      >
+                        <img src="assets/img/cart.svg" alt="cart" />
+                      </button>
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2 toggle-fav text-secondary"
+                      >
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2"
+                      >
+                        <img src="assets/img/share.svg" alt="share" />
+                      </button>
+                    </div>
+
+                    <div class="owl-carousel product-carusel overflow-hidden">
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product1.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product2.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product3.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                    </div>
+
+                    <a href="product.html" class="info bg-white d-block">
+                      <div
+                        class="d-flex align-items-center justify-content-between flex-wrap px-4 border-bottom py-1"
+                      >
+                        <h6 class="fw-normal fs-14 text-secondary my-2">
+                          تصميم فيلا
+                        </h6>
+                        <span class="text-primary my-2 fs-13">250.00 ريال</span>
+                      </div>
+                      <div
+                        class="py-2 px-4 d-flex align-items-center justify-content-between flex-wrap"
+                      >
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="assets/img/space.svg"
+                            class="space-icon"
+                            alt="icon"
+                          />
+                          <span class="text-black ms-2 fs-13">المساحات:</span>
+                        </div>
+                        <div class="spaces d-flex align-items-center flex-wrap">
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            200
+                          </div>
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            220
+                          </div>
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            240
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="product">
+                    <span class="side-badge bg-secondary text-white"
+                      >الأكثر مبيعا</span
+                    >
+
+                    <div class="side-options">
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2"
+                      >
+                        <img src="assets/img/cart.svg" alt="cart" />
+                      </button>
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2 toggle-fav text-secondary"
+                      >
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn bg-white icon-btn option mb-2"
+                      >
+                        <img src="assets/img/share.svg" alt="share" />
+                      </button>
+                    </div>
+
+                    <div class="owl-carousel product-carusel overflow-hidden">
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product1.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product2.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                      <a href="product.html" class="item">
+                        <img
+                          src="assets/img/loader.gif"
+                          data-src="assets/img/product3.png"
+                          class="lazyload pro-img"
+                          alt="product"
+                        />
+                      </a>
+                    </div>
+
+                    <a href="product.html" class="info bg-white d-block">
+                      <div
+                        class="d-flex align-items-center justify-content-between flex-wrap px-4 border-bottom py-1"
+                      >
+                        <h6 class="fw-normal fs-14 text-secondary my-2">
+                          تصميم فيلا
+                        </h6>
+                        <span class="text-primary my-2 fs-13">250.00 ريال</span>
+                      </div>
+                      <div
+                        class="py-2 px-4 d-flex align-items-center justify-content-between flex-wrap"
+                      >
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="assets/img/space.svg"
+                            class="space-icon"
+                            alt="icon"
+                          />
+                          <span class="text-black ms-2 fs-13">المساحات:</span>
+                        </div>
+                        <div class="spaces d-flex align-items-center flex-wrap">
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            200
+                          </div>
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            220
+                          </div>
+                          <div
+                            class="space border border-primary py-1 px-2 flex-center text-primary fs-13 my-2 ms-3"
+                          >
+                            240
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- start pagination -->
+              <ul class="pagination flex-center flex-wrap mt-4">
+                <li class="page-item disabled">
+                  <a class="page-link border-0" href="#" aria-label="Previous">
+                    <span aria-hidden="true"
+                      ><i class="fa-solid fa-chevron-right rotate-180"></i
+                    ></span>
+                  </a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item">
+                  <a class="page-link border-0" href="#" aria-label="Next">
+                    <span aria-hidden="true"
+                      ><i class="fa-solid fa-chevron-left rotate-180"></i
+                    ></span>
+                  </a>
+                </li>
+              </ul>
+              <!-- end pagination -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end design by urself -->
+    </main>
+    <!-- end page unique content -->
+
+    <!-- start footer -->
+    <footer>
+      <div class="border-bottom border-white py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 mb-5 mb-md-0">
+              <img src="assets/img/logo.svg" alt="logo" class="footer-logo" />
+            </div>
+
+            <div class="col-md-3 mb-5 mb-md-0">
+              <h6 class="text-white mb-3 fw-normal">روابط سريعة</h6>
+              <ul class="fs-14">
+                <li class="mb-3">
+                  <a href="index.html" class="white-link d-inline-flex"
+                    >الرئيسية</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a href="compare.html" class="white-link d-inline-flex"
+                    >المقارنة</a
+                  >
+                </li>
+                <li>
+                  <a href="contactUs.html" class="white-link d-inline-flex"
+                    >تواصل معنا</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-5 mb-md-0">
+              <h6 class="text-white mb-3 fw-normal">كن شريك لنا</h6>
+              <ul class="fs-14">
+                <li class="mb-3">
+                  <a href="about.html" class="white-link d-inline-flex"
+                    >عن الموقع</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a href="faq.html" class="white-link d-inline-flex"
+                    >الأسئلة المتكررة</a
+                  >
+                </li>
+                <li>
+                  <a href="terms.html" class="white-link d-inline-flex"
+                    >الشروط والأحكام</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h6 class="text-white mb-3 fw-normal">تابعنا على</h6>
+              <div class="social">
+                <a href="https://twitter.com"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="https://tiktok.com"
+                  ><i class="fa-brands fa-tiktok"></i
+                ></a>
+                <a href="https://facebook.com"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="https://instagram.com"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://snapchat.com"
+                  ><i class="fa-brands fa-snapchat"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p
+          class="d-flex justify-content-center flex-wrap text-center p-3 text-white fs-13 mb-0 lh-lg"
+        >
+          تصميم وبرمجة شركة
+          <a href="aait.sa" class="white-link mx-1">أوامر الشبكة</a> - جميع
+          الحقوق محفوظة للشركة منصة مفتاح للتسويق الالكتروني
+        </p>
+      </div>
+    </footer>
+
+    <!-- start floating whatsapp -->
+    <a href="https://wa.me/+966500000000" class="whatsapp">
+      <img src="assets/img/whatsapp.svg" alt="whatsapp" />
+    </a>
+    <!-- end floating whatsapp -->
+
+    <!-- start scroll-top-->
+    <div id="scroll-top" class="text-center">
+      <i class="fas fa-angle-up"></i>
+    </div>
+    <!-- end scroll-top-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap 5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // select2
+        $(".select2").select2({
+          width: "100%",
+        });
+
+        // Check the value of the switch when its state changes
+        $("#more").change(function () {
+          if ($(this).is(":checked")) {
+            $(".hidden-more").slideDown();
+          } else {
+            $(".hidden-more").slideUp();
+          }
+        });
+
+        let isRtl = $('html[lang="ar"]').length > 0;
+        $(".product-carusel").owlCarousel({
+          items: 1,
+          loop: true,
+          rtl: isRtl,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          autoplayTimeout: 5000,
+          smartSpeed: 2000,
+          nav: true,
+          navText: [
+            '<i class="fa-solid fa-chevron-right"></i>',
+            '<i class="fa-solid fa-chevron-left"></i>',
+          ],
+          animateOut: "fadeOut",
+        });
+      });
+    </script>
+  </body>
+</html>

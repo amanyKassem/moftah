@@ -200,10 +200,10 @@
                 >
               </li>
               <li class="breadcrumb-item">
-                <a href="product.html" class="text-midGrey"> تفاصيل التصميم</a>
+                <a href="cart.html" class="text-midGrey"> السلة</a>
               </li>
               <li class="breadcrumb-item active text-black" aria-current="page">
-                <h1 class="fs-16 fw-500 d-inline-block">إضافة للسلة</h1>
+                <h1 class="fs-16 fw-500 d-inline-block">استكمال الطلب</h1>
               </li>
             </ol>
           </div>
@@ -211,199 +211,62 @@
       </header>
       <!-- end header -->
 
-      <!-- start add to cart -->
+      <!-- start cart -->
       <section class="py-4">
         <div class="container">
-          <form action="" class="mx-auto white-form">
-            <div class="bg-white mb-3 px-md-5">
-              <h3 class="fw-500 fs-5 mb-4 text-black">خيارات الشراء</h3>
-              <div class="row">
-                <div class="col-md-6 col-lg-8">
-                  <div class="form-check mb-3">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="option1"
-                      checked
-                    />
-                    <label class="form-check-label" for="option1">
-                      مخطط معماري فقط
-                      <img
-                        data-bs-toggle="modal"
-                        data-bs-target="#optionsModal"
-                        src="assets/img/info-circle.svg"
-                        alt="info"
-                        class="cursor-pointer ms-2"
-                        width="20"
-                      />
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
-                <div class="col-md-6 col-lg-8">
-                  <div class="form-check mb-3">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="option2"
-                    />
-                    <label class="form-check-label" for="option2">
-                      مخطط معماري متكامل
-                      <img
-                        data-bs-toggle="modal"
-                        data-bs-target="#optionsModal"
-                        src="assets/img/info-circle.svg"
-                        alt="info"
-                        class="cursor-pointer ms-2"
-                        width="20"
-                      />
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
-                <div class="col-md-6 col-lg-8">
-                  <div class="form-check mb-3">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="option2"
-                    />
-                    <label class="form-check-label" for="option2">
-                      مخطط شامل
-                      <img
-                        data-bs-toggle="modal"
-                        data-bs-target="#optionsModal"
-                        src="assets/img/info-circle.svg"
-                        alt="info"
-                        class="cursor-pointer ms-2"
-                        width="20"
-                      />
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
+          <div class="mx-auto white-form">
+            <div class="bg-white mb-3 px-3 py-0">
+              <h3 class="fw-500 fs-5 text-black mb-3 border-bottom py-3">
+                ملخص الطلب
+              </h3>
+              <div
+                class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom flex-wrap text-midGrey"
+              >
+                <span class="me-3">سعر التصميم</span>
+                200.00 ر.س
               </div>
-            </div>
-            <div class="bg-white mb-3 px-md-5">
-              <h3 class="fw-500 fs-5 mb-4 text-black">اختر الاضافات</h3>
-              <div class="row">
-                <div class="col-md-6 col-lg-8">
-                  <div class="form-check mb-3">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="check1"
-                    />
-                    <label class="form-check-label" for="check1">
-                      إصدار رخصة بناء
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
-                <div class="col-md-6 col-lg-8">
-                  <div class="form-check mb-3">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="check2"
-                    />
-                    <label class="form-check-label" for="check2">
-                      الحصول على نسخة ورقية
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
+              <div
+                class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom flex-wrap text-midGrey"
+              >
+                <span class="me-3">قيمة الضريبة</span>
+                50.00 ر.س
               </div>
-            </div>
-            <div class="bg-white mb-3 px-md-5">
-              <h3 class="fw-500 fs-5 mb-4 text-black">اختر الاضافات</h3>
-              <div class="row">
-                <div class="col-md-6 col-lg-8">
-                  <h6 class="text-black fw-500 fs-14">السعر النهائي</h6>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
+              <div
+                class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom flex-wrap text-midGrey"
+              >
+                <span class="me-3">طريقة الدفع</span>
+                الكتروني
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom flex-wrap text-midGrey"
+              >
+                <span class="me-3">كوبون الخصم</span>
+                30.00 ر.س
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mb-3 pb-3 flex-wrap text-primary"
+              >
+                <span class="me-3">السعر الإجمالي</span>
+                220.00 ر.س
               </div>
             </div>
 
             <button
               type="button"
-              class="add-to-cart btn btn-primary w-fit fs-14 mx-auto"
+              class="pay btn btn-primary w-fit fs-14 mx-auto mt-5 mb-4"
             >
-              إضافة للسلة
+              دفع
             </button>
-          </form>
-        </div>
-      </section>
-
-      <!-- options modal -->
-      <div
-        class="modal fade"
-        id="optionsModal"
-        tabindex="-1"
-        aria-labelledby="optionsModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header border-0 justify-content-center">
-              <h5 class="modal-title" id="optionsModalLabel">مخطط معماري</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body px-md-5">
-              <p class="lh-lg fs-14 text-center text-midGrey">
-                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو
-                مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن
-                أن يستبدل في نفس المساحة في نفس المساحة هذا النص هو مثال لنص
-                يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن
-                يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس
-                المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا
-                النص هو مثال لنص يمكن أن يستبدل في نفس المساحة في نفس
-              </p>
-            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- success modal -->
       <div
         class="modal fade"
-        id="successCartModal"
+        id="successPayModal"
         tabindex="-1"
-        aria-labelledby="successCartModalLabel"
+        aria-labelledby="successPayModalLabel"
         aria-hidden="true"
       >
         <div class="modal-dialog modal-dialog modal-dialog-centered">
@@ -413,14 +276,14 @@
             >
               <i class="fa-solid fa-circle-check mb-4 text-primary fs-70"></i>
               <p class="text-center mb-0 text-midGrey lh-lg fs-14">
-                تم إضافة التصميم للسلة بنجاح
+                تم تأكيد الطلب بنجاح
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- end add to cart -->
+      <!-- end cart -->
     </main>
     <!-- end page unique content -->
 
@@ -538,10 +401,10 @@
     <script>
       $(document).ready(function () {
         // Show modal when button is clicked
-        $(".add-to-cart").click(function () {
-          $("#successCartModal").modal("show");
+        $(".pay").click(function () {
+          $("#successPayModal").modal("show");
           setTimeout(function () {
-            window.location.href = "cart.html";
+            window.location.href = "index.html";
           }, 1200);
         });
       });

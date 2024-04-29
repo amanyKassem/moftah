@@ -203,7 +203,7 @@
                 <a href="product.html" class="text-midGrey"> تفاصيل التصميم</a>
               </li>
               <li class="breadcrumb-item active text-black" aria-current="page">
-                <h1 class="fs-14 fw-normal d-inline-block">شراء بتعديل</h1>
+                <h1 class="fs-16 fw-500 d-inline-block">شراء بتعديل</h1>
               </li>
             </ol>
           </div>
@@ -211,17 +211,17 @@
       </header>
       <!-- end header -->
 
-      <!-- start add to cart -->
-      <section class="py-5">
+      <!-- start edit -->
+      <section class="py-4">
         <div class="container">
           <h3
-            class="fw-normal fs-5 text-black text-center mb-5 w-25 mx-auto lh-base"
+            class="fw-500 fs-5 text-black text-center mb-5 w-25 mx-auto lh-base"
           >
             للحصول على خدمة التعديل على المخطط يجب شراء المخطط علما بأن
           </h3>
           <form action="" class="mx-auto white-form">
             <div class="bg-white mb-3 px-md-5">
-              <h3 class="fw-normal fs-5 mb-4 text-primary">تفاصيل التعديل:</h3>
+              <h3 class="fw-500 fs-5 mb-4 text-primary">تفاصيل التعديل:</h3>
               <div class="row">
                 <div class="col-md-6">
                   <div class="mb-3">
@@ -231,15 +231,39 @@
                     <textarea
                       class="form-control bg-white p-2 border"
                       id="order-details"
-                      rows="5"
+                      rows="3"
                       placeholder="أدخل ملاحظات"
                     ></textarea>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="files_input" class="form-label">صور</label>
+                  <div
+                    class="d-flex align-items-center flex-wrap upload-multi-imgs"
+                  >
+                    <div class="uploaded__area" id="files_cont"></div>
+                    <div class="update_images mb-3">
+                      <div class="img-block multiple">
+                        <input
+                          class="hidden-upload float_input"
+                          data-input="files"
+                          id="files_input"
+                          name="files[]"
+                          multiple
+                          type="file"
+                          accept=".jpg, .jpeg, .png, .gif"
+                        />
+                        <div class="uploud_label">
+                          <i class="fa-solid fa-plus"></i>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="bg-white mb-3 px-md-5">
-              <h3 class="fw-normal fs-5 text-primary mb-4">
+              <h3 class="fw-500 fs-5 text-primary mb-4">
                 اختر طريقة الدفع:
               </h3>
 
@@ -280,23 +304,99 @@
               </div>
             </div>
             <div class="bg-white mb-3 px-md-5">
-              <h3 class="fw-normal fs-5 text-primary mb-4">
+              <h3 class="fw-500 fs-5 text-primary mb-4">
                 هل لديك كوبون خصم؟
               </h3>
 
+              <div class="input-group mb-3 border p-2 rounded-3 w-75 mx-auto">
+                <input
+                  type="text"
+                  class="form-control bg-white"
+                  placeholder="أدخل الكود"
+                  aria-label="enter code"
+                  aria-describedby="coupon"
+                />
+                <button
+                  class="btn btn-primary px-3 mw-auto"
+                  type="button"
+                  id="coupon"
+                >
+                  تفعيل
+                </button>
+              </div>
+            </div>
+
+            <div class="bg-white mb-3 px-3 py-0">
+              <h3 class="fw-500 fs-5 text-black mb-3 border-bottom py-3">
+                ملخص الطلب
+              </h3>
+              <div
+                class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom flex-wrap text-midGrey"
+              >
+                <span class="me-3">سعر التصميم</span>
+                200.00 ر.س
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom flex-wrap text-midGrey"
+              >
+                <span class="me-3">قيمة الضريبة</span>
+                50.00 ر.س
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom flex-wrap text-midGrey"
+              >
+                <span class="me-3">طريقة الدفع</span>
+                الكتروني
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom flex-wrap text-midGrey"
+              >
+                <span class="me-3">كوبون الخصم</span>
+                30.00 ر.س
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mb-3 pb-3 flex-wrap text-primary"
+              >
+                <span class="me-3">السعر الإجمالي</span>
+                220.00 ر.س
+              </div>
             </div>
 
             <button
               type="button"
-              class="routeToEdit btn btn-primary w-fit fs-14 mx-auto"
+              class="pay btn btn-primary w-fit fs-14 mx-auto"
             >
-              استمرار
+              دفع
             </button>
           </form>
         </div>
       </section>
 
-      <!-- end add to cart -->
+      <!-- success modal -->
+      <div
+        class="modal fade"
+        id="successPayModal"
+        tabindex="-1"
+        aria-labelledby="successPayModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div
+              class="modal-body d-flex flex-column align-items-center justify-content-center py-5"
+            >
+              <i class="fa-solid fa-circle-check mb-4 text-primary fs-70"></i>
+              <p class="text-center mb-0 text-midGrey lh-lg fs-14">
+                تم إرسال طلبك بنجاح
+                <br />
+                سيتم الرد عليك من مقدم الخدمة
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- end edit -->
     </main>
     <!-- end page unique content -->
 
@@ -411,5 +511,102 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
     <script src="assets/js/scripts.js"></script>
+
+    <script>
+      let inputsFiles = {};
+      $(".hidden-upload").on("change", function (event) {
+        let input = $(this).data("input");
+        const selectedFilesCont = document.getElementById(input + "_cont");
+        if (!!inputsFiles[input]) {
+          let files = new DataTransfer();
+          for (let i = 0; i < event.target.files.length; i++) {
+            files.items.add(event.target.files[i]);
+          }
+          for (let i = 0; i < inputsFiles[input].length; i++) {
+            files.items.add(inputsFiles[input][i]);
+          }
+          inputsFiles[input] = files.files;
+          selectedFilesCont.innerHTML = "";
+        } else {
+          inputsFiles[input] = event.target.files;
+        }
+        if (!!inputsFiles[input] && inputsFiles[input].length > 0) {
+          for (let i = 0; i < inputsFiles[input].length; i++) {
+            const fileType = inputsFiles[input][i].type.split("/")[0];
+            const fileExtension = inputsFiles[input][i].name.split(".")[1];
+            if (fileType === "image") {
+              let src = URL.createObjectURL(inputsFiles[input][i]);
+              $("#" + input + "_cont").append(` <div class="file_ me-2 mb-3">
+    <a data-fancybox="gallery" class="h-100" href="${src}">
+    <img src="${src}" alt="">
+    </a>
+    <div class="btn remove_media" onclick="deleteFile(this ,'${inputsFiles[input][i].name}' ,'${input}')"><i class="fa-regular fa-trash-can"></i></div>
+    </div>`);
+            } else if (fileType === "video") {
+              let src = URL.createObjectURL(inputsFiles[input][i]);
+
+              $("#" + input + "_cont").append(`<div class="file_ me-2 mb-3">
+    <a data-fancybox="gallery" class="h-100" data-type="video" href="${src}">
+    <video controls>
+    <source src="${src}" type="video/mp4">
+    </video>
+    <div class="play-button"><i class="fa-solid fa-play-circle fs-13"></i></div>
+    </a>
+    <div class="btn remove_media" onclick="deleteFile(this ,'${inputsFiles[input][i].name}' ,'${input}')"><i class="fa-regular fa-trash-can"></i></div>
+    </div>`);
+            } else if (
+              ["doc", "docx", "xls", "pdf"].indexOf(fileExtension) != -1
+            ) {
+              $("#" + input + "_cont").append(`<div class="file_ me-2 mb-3">
+    <div class="docs_file">
+    <div class="d-flex flex-column align-items-center justify-content-center h-100 p-2">
+    <span class="font10">${inputsFiles[input][i].name}</span>
+    <span><i class="far fa-file-pdf mr-1 ml-1"></i></span>
+    </div>
+    </div>
+    <div class="btn remove_media" onclick="deleteFile(this ,'${inputsFiles[input][i].name}' ,'${input}')"><i class="fa-regular fa-trash-can"></i></div>
+    </div>`);
+            }
+          }
+        }
+        event.target.files = inputsFiles[input];
+      });
+      function deleteFile(ele, name, input) {
+        let filesInput = document.getElementById(input + "_input");
+        let files = new DataTransfer();
+        let deleted = null;
+        for (let i = 0; i < filesInput.files.length; i++) {
+          if (filesInput.files[i].name == name && deleted != name) {
+            deleted = name;
+            continue;
+          }
+          files.items.add(filesInput.files[i]);
+        }
+        filesInput.files = files.files;
+        inputsFiles[input] = files.files;
+        $(ele).parent().remove();
+      }
+
+      $(".slide_block").hide();
+      $(document).on("change", ".slide_check", function () {
+        if ($(this).is(":checked")) {
+          $(this).parents("label").next(".slide_block").slideDown(200);
+        } else {
+          $(this).parents("label").next(".slide_block").slideUp(200);
+        }
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        // Show modal when button is clicked
+        $(".pay").click(function () {
+          $("#successPayModal").modal("show");
+          setTimeout(function () {
+            window.location.href = "product.html";
+          }, 1200);
+        });
+      });
+    </script>
   </body>
 </html>

@@ -59,10 +59,6 @@
       href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
-    />
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
 
@@ -199,11 +195,8 @@
                   الصفحة الرئيسية</a
                 >
               </li>
-              <li class="breadcrumb-item">
-                <a href="product.html" class="text-midGrey"> تفاصيل التصميم</a>
-              </li>
               <li class="breadcrumb-item active text-black" aria-current="page">
-                <h1 class="fs-16 fw-500 d-inline-block">إضافة للسلة</h1>
+                <h1 class="fs-16 fw-500 d-inline-block">الأسئلة المتكررة</h1>
               </li>
             </ol>
           </div>
@@ -211,216 +204,122 @@
       </header>
       <!-- end header -->
 
-      <!-- start add to cart -->
-      <section class="py-4">
+      <!-- start faq -->
+
+      <section class="pb-3">
         <div class="container">
-          <form action="" class="mx-auto white-form">
-            <div class="bg-white mb-3 px-md-5">
-              <h3 class="fw-500 fs-5 mb-4 text-black">خيارات الشراء</h3>
-              <div class="row">
-                <div class="col-md-6 col-lg-8">
-                  <div class="form-check mb-3">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="option1"
-                      checked
-                    />
-                    <label class="form-check-label" for="option1">
-                      مخطط معماري فقط
-                      <img
-                        data-bs-toggle="modal"
-                        data-bs-target="#optionsModal"
-                        src="assets/img/info-circle.svg"
-                        alt="info"
-                        class="cursor-pointer ms-2"
-                        width="20"
-                      />
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
-                <div class="col-md-6 col-lg-8">
-                  <div class="form-check mb-3">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="option2"
-                    />
-                    <label class="form-check-label" for="option2">
-                      مخطط معماري متكامل
-                      <img
-                        data-bs-toggle="modal"
-                        data-bs-target="#optionsModal"
-                        src="assets/img/info-circle.svg"
-                        alt="info"
-                        class="cursor-pointer ms-2"
-                        width="20"
-                      />
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
-                <div class="col-md-6 col-lg-8">
-                  <div class="form-check mb-3">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="option2"
-                    />
-                    <label class="form-check-label" for="option2">
-                      مخطط شامل
-                      <img
-                        data-bs-toggle="modal"
-                        data-bs-target="#optionsModal"
-                        src="assets/img/info-circle.svg"
-                        alt="info"
-                        class="cursor-pointer ms-2"
-                        width="20"
-                      />
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="bg-white mb-3 px-md-5">
-              <h3 class="fw-500 fs-5 mb-4 text-black">اختر الاضافات</h3>
-              <div class="row">
-                <div class="col-md-6 col-lg-8">
-                  <div class="form-check mb-3">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="check1"
-                    />
-                    <label class="form-check-label" for="check1">
-                      إصدار رخصة بناء
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
-                <div class="col-md-6 col-lg-8">
-                  <div class="form-check mb-3">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="check2"
-                    />
-                    <label class="form-check-label" for="check2">
-                      الحصول على نسخة ورقية
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="bg-white mb-3 px-md-5">
-              <h3 class="fw-500 fs-5 mb-4 text-black">اختر الاضافات</h3>
-              <div class="row">
-                <div class="col-md-6 col-lg-8">
-                  <h6 class="text-black fw-500 fs-14">السعر النهائي</h6>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item border-0 mb-3">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button text-black bg-white bs-none fs-14"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  س/هذ النص تجريبي يمكن أن يتغير؟
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="text-midGrey lh-lg fs-14">
+                    ج/هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من ج/هذا النص هو مثال لنص يمكن أن يستبدل
+                    في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى،
+                    حيث يمكنك أن تولد مثل هذا النص أو العديد من ج/هذا النص هو
+                    مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
+                    النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                    العديد من ج/هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                    المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+                    يمكنك أن تولد مثل هذا النص أو العديد من
+                  </p>
                 </div>
               </div>
             </div>
 
-            <button
-              type="button"
-              class="add-to-cart btn btn-primary w-fit fs-14 mx-auto"
-            >
-              إضافة للسلة
-            </button>
-          </form>
+            <div class="accordion-item border-0 mb-3">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button text-black bg-white bs-none fs-14 collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  س/هذ النص تجريبي يمكن أن يتغير؟
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="text-midGrey lh-lg fs-14">
+                    ج/هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من ج/هذا النص هو مثال لنص يمكن أن يستبدل
+                    في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى،
+                    حيث يمكنك أن تولد مثل هذا النص أو العديد من ج/هذا النص هو
+                    مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
+                    النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                    العديد من ج/هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                    المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+                    يمكنك أن تولد مثل هذا النص أو العديد من
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-0 mb-3">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button text-black bg-white bs-none fs-14 collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  س/هذ النص تجريبي يمكن أن يتغير؟
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="text-midGrey lh-lg fs-14">
+                    ج/هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من ج/هذا النص هو مثال لنص يمكن أن يستبدل
+                    في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى،
+                    حيث يمكنك أن تولد مثل هذا النص أو العديد من ج/هذا النص هو
+                    مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
+                    النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                    العديد من ج/هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                    المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+                    يمكنك أن تولد مثل هذا النص أو العديد من
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- options modal -->
-      <div
-        class="modal fade"
-        id="optionsModal"
-        tabindex="-1"
-        aria-labelledby="optionsModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header border-0 justify-content-center">
-              <h5 class="modal-title" id="optionsModalLabel">مخطط معماري</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body px-md-5">
-              <p class="lh-lg fs-14 text-center text-midGrey">
-                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو
-                مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن
-                أن يستبدل في نفس المساحة في نفس المساحة هذا النص هو مثال لنص
-                يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن
-                يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس
-                المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا
-                النص هو مثال لنص يمكن أن يستبدل في نفس المساحة في نفس
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- success modal -->
-      <div
-        class="modal fade"
-        id="successCartModal"
-        tabindex="-1"
-        aria-labelledby="successCartModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div
-              class="modal-body d-flex flex-column align-items-center justify-content-center py-5"
-            >
-              <i class="fa-solid fa-circle-check mb-4 text-primary fs-70"></i>
-              <p class="text-center mb-0 text-midGrey lh-lg fs-14">
-                تم إضافة التصميم للسلة بنجاح
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- end add to cart -->
+      <!-- end faq -->
     </main>
     <!-- end page unique content -->
 
@@ -533,18 +432,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
     <script src="assets/js/scripts.js"></script>
-    <script>
-      $(document).ready(function () {
-        // Show modal when button is clicked
-        $(".add-to-cart").click(function () {
-          $("#successCartModal").modal("show");
-          setTimeout(function () {
-            window.location.href = "cart.html";
-          }, 1200);
-        });
-      });
-    </script>
   </body>
 </html>

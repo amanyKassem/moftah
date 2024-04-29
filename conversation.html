@@ -156,7 +156,7 @@
                 <li>
                   <a class="dropdown-item" href="profile.html">الملف الشخصي</a>
                 </li>
-                <li>
+                <li class="active">
                   <a class="dropdown-item" href="chat.html">محادثاتي</a>
                 </li>
                 <li>
@@ -200,10 +200,10 @@
                 >
               </li>
               <li class="breadcrumb-item">
-                <a href="product.html" class="text-midGrey"> تفاصيل التصميم</a>
+                <a href="chat.html" class="text-midGrey"> محادثاتي</a>
               </li>
               <li class="breadcrumb-item active text-black" aria-current="page">
-                <h1 class="fs-16 fw-500 d-inline-block">إضافة للسلة</h1>
+                <h1 class="fs-16 fw-500 d-inline-block">تفاصيل محادثة</h1>
               </li>
             </ol>
           </div>
@@ -211,216 +211,141 @@
       </header>
       <!-- end header -->
 
-      <!-- start add to cart -->
+      <!-- start cart -->
       <section class="py-4">
         <div class="container">
-          <form action="" class="mx-auto white-form">
-            <div class="bg-white mb-3 px-md-5">
-              <h3 class="fw-500 fs-5 mb-4 text-black">خيارات الشراء</h3>
-              <div class="row">
-                <div class="col-md-6 col-lg-8">
-                  <div class="form-check mb-3">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="option1"
-                      checked
-                    />
-                    <label class="form-check-label" for="option1">
-                      مخطط معماري فقط
-                      <img
-                        data-bs-toggle="modal"
-                        data-bs-target="#optionsModal"
-                        src="assets/img/info-circle.svg"
-                        alt="info"
-                        class="cursor-pointer ms-2"
-                        width="20"
-                      />
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
-                <div class="col-md-6 col-lg-8">
-                  <div class="form-check mb-3">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="option2"
-                    />
-                    <label class="form-check-label" for="option2">
-                      مخطط معماري متكامل
-                      <img
-                        data-bs-toggle="modal"
-                        data-bs-target="#optionsModal"
-                        src="assets/img/info-circle.svg"
-                        alt="info"
-                        class="cursor-pointer ms-2"
-                        width="20"
-                      />
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
-                <div class="col-md-6 col-lg-8">
-                  <div class="form-check mb-3">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="option2"
-                    />
-                    <label class="form-check-label" for="option2">
-                      مخطط شامل
-                      <img
-                        data-bs-toggle="modal"
-                        data-bs-target="#optionsModal"
-                        src="assets/img/info-circle.svg"
-                        alt="info"
-                        class="cursor-pointer ms-2"
-                        width="20"
-                      />
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="bg-white mb-3 px-md-5">
-              <h3 class="fw-500 fs-5 mb-4 text-black">اختر الاضافات</h3>
-              <div class="row">
-                <div class="col-md-6 col-lg-8">
-                  <div class="form-check mb-3">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="check1"
-                    />
-                    <label class="form-check-label" for="check1">
-                      إصدار رخصة بناء
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
-                <div class="col-md-6 col-lg-8">
-                  <div class="form-check mb-3">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="check2"
-                    />
-                    <label class="form-check-label" for="check2">
-                      الحصول على نسخة ورقية
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="bg-white mb-3 px-md-5">
-              <h3 class="fw-500 fs-5 mb-4 text-black">اختر الاضافات</h3>
-              <div class="row">
-                <div class="col-md-6 col-lg-8">
-                  <h6 class="text-black fw-500 fs-14">السعر النهائي</h6>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <button
-              type="button"
-              class="add-to-cart btn btn-primary w-fit fs-14 mx-auto"
+          <div class="mx-auto white-form mb-4">
+            <div
+              class="bg-white p-0 border border-primary rounded-3 position-relative overflow-hidden"
             >
-              إضافة للسلة
-            </button>
-          </form>
+              <a
+                href="chat.html"
+                class="fw-500 mx-md-4 p-3 text-center justify-content-center my-3 bg-lightPrimary2 text-primary rounded-3"
+              >
+                تقوم الإدارة بالإطلاع على المحادثات
+              </a>
+              <div class="px-md-4">
+                <div class="chat-container px-2">
+                  <!-- sender -->
+                  <div class="chat-message">
+                    <img
+                      src="assets/img/1.jpg"
+                      class="user-image me-3"
+                      alt="User 1"
+                    />
+                    <div class="message">
+                      <p class="fs-13">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا
+                        النص هو مثال لنص يمكن أن يستبدل
+                      </p>
+                      <span class="message-date">18:57 2023/12/27</span>
+                    </div>
+                  </div>
+                  <!-- reciever -->
+                  <div class="chat-message flex-row-reverse">
+                    <img
+                      src="assets/img/img_avatar.png"
+                      class="user-image ms-3"
+                      alt="User 2"
+                    />
+                    <div class="message align-items-end">
+                      <p class="fs-13">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا
+                        النص هو مثال لنص يمكن أن يستبدل
+                      </p>
+                      <span class="message-date">18:57 2023/12/27</span>
+                    </div>
+                  </div>
+                  <!-- sender -->
+                  <div class="chat-message">
+                    <img
+                      src="assets/img/1.jpg"
+                      class="user-image me-3"
+                      alt="User 1"
+                    />
+                    <div class="message">
+                      <p class="fs-13">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا
+                        النص هو مثال لنص يمكن أن يستبدل
+                      </p>
+                      <span class="message-date">18:57 2023/12/27</span>
+                    </div>
+                  </div>
+                  <!-- reciever -->
+                  <div class="chat-message flex-row-reverse">
+                    <img
+                      src="assets/img/img_avatar.png"
+                      class="user-image ms-3"
+                      alt="User 2"
+                    />
+                    <div class="message align-items-end">
+                      <p class="fs-13">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا
+                        النص هو مثال لنص يمكن أن يستبدل
+                      </p>
+                      <span class="message-date">18:57 2023/12/27</span>
+                    </div>
+                  </div>
+                  <!-- sender -->
+                  <div class="chat-message">
+                    <img
+                      src="assets/img/1.jpg"
+                      class="user-image me-3"
+                      alt="User 1"
+                    />
+                    <div class="message">
+                      <p class="fs-13">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا
+                        النص هو مثال لنص يمكن أن يستبدل
+                      </p>
+                      <span class="message-date">18:57 2023/12/27</span>
+                    </div>
+                  </div>
+                  <!-- reciever -->
+                  <div class="chat-message flex-row-reverse">
+                    <img
+                      src="assets/img/img_avatar.png"
+                      class="user-image ms-3"
+                      alt="User 2"
+                    />
+                    <div class="message align-items-end">
+                      <p class="fs-13">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا
+                        النص هو مثال لنص يمكن أن يستبدل
+                      </p>
+                      <span class="message-date">18:57 2023/12/27</span>
+                    </div>
+                  </div>
+                  <!-- More chat messages here -->
+                </div>
+              </div>
+
+              <div class="chat-controls">
+                <button class="record-sound btn control-btn mw-auto p-0">
+                  <img src="assets/img/mic.svg" alt="record" />
+                </button>
+                <input
+                  type="text"
+                  class="message-input form-control bg-transparent me-md-2"
+                  placeholder="اكتب رسالتك..."
+                />
+                <label for="file-upload" class="upload-image me-2 me-md-3"
+                  ><img src="assets/img/cam.svg" alt="image"
+                /></label>
+                <input
+                  id="file-upload"
+                  type="file"
+                  accept="image/*"
+                  class="d-none"
+                />
+                <button class="send-button btn btn-primary">ارسال</button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- options modal -->
-      <div
-        class="modal fade"
-        id="optionsModal"
-        tabindex="-1"
-        aria-labelledby="optionsModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header border-0 justify-content-center">
-              <h5 class="modal-title" id="optionsModalLabel">مخطط معماري</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body px-md-5">
-              <p class="lh-lg fs-14 text-center text-midGrey">
-                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو
-                مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن
-                أن يستبدل في نفس المساحة في نفس المساحة هذا النص هو مثال لنص
-                يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن
-                يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس
-                المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا
-                النص هو مثال لنص يمكن أن يستبدل في نفس المساحة في نفس
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- success modal -->
-      <div
-        class="modal fade"
-        id="successCartModal"
-        tabindex="-1"
-        aria-labelledby="successCartModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div
-              class="modal-body d-flex flex-column align-items-center justify-content-center py-5"
-            >
-              <i class="fa-solid fa-circle-check mb-4 text-primary fs-70"></i>
-              <p class="text-center mb-0 text-midGrey lh-lg fs-14">
-                تم إضافة التصميم للسلة بنجاح
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- end add to cart -->
+      <!-- end cart -->
     </main>
     <!-- end page unique content -->
 
@@ -537,13 +462,84 @@
     <script src="assets/js/scripts.js"></script>
     <script>
       $(document).ready(function () {
-        // Show modal when button is clicked
-        $(".add-to-cart").click(function () {
-          $("#successCartModal").modal("show");
-          setTimeout(function () {
-            window.location.href = "cart.html";
-          }, 1200);
+        // Function to scroll chat container to the bottom
+        function scrollToBottom() {
+          var chatContainer = $(".chat-container");
+          chatContainer.animate(
+            { scrollTop: chatContainer.prop("scrollHeight") },
+            500
+          ); 
+        }
+
+        scrollToBottom();
+
+        $(".message-input").keypress(function (event) {
+          if (event.which === 13) {
+            // Check if Enter key is pressed
+            event.preventDefault(); // Prevent default form submission
+            sendMessage();
+          }
         });
+
+        // Trigger sending message when Send button is clicked
+        $(".send-button").click(function () {
+          sendMessage();
+        });
+
+        // Function to send message
+        function sendMessage() {
+          var messageText = $(".message-input").val().trim(); // Get message text from input field
+          if (messageText !== "") {
+            // Check if message is not empty
+            addMessage("assets/img/1.jpg", messageText, getCurrentTime()); // Add message to chat
+            $(".message-input").val(""); // Clear input field after sending message
+          }
+        }
+
+        // Function to add a new message to the chat container
+        function addMessage(userImage, messageText, messageDate) {
+          if (messageText !== "") {
+            var chatMessage = $('<div class="chat-message">').appendTo(
+              ".chat-container"
+            );
+            $('<img class="user-image me-3">')
+              .attr("src", userImage)
+              .appendTo(chatMessage);
+            var messageDiv = $('<div class="message">').appendTo(chatMessage);
+            // console.log("messageText", typeof messageText);
+            if (typeof messageText == "string") {
+              $("<p  class='fs-13'>").text(messageText).appendTo(messageDiv);
+            } else {
+              $(messageText).appendTo(messageDiv); // Append message content (text or image) dynamically
+            }
+            $('<span class="message-date">')
+              .text(messageDate)
+              .appendTo(messageDiv);
+            scrollToBottom(); // Scroll to the bottom after adding a message
+          }
+        }
+        $("#file-upload").change(function () {
+          console.log("aa");
+          var file = this.files[0];
+          var imageUrl = URL.createObjectURL(file); // Generate a URL for the uploaded image
+          addMessage(
+            "assets/img/1.jpg",
+            $("<img>").attr("src", imageUrl),
+            getCurrentTime()
+          ); // Append image element as message content
+        });
+
+        // Function to get current time (for message date)
+        function getCurrentTime() {
+          var now = new Date();
+          var hours = now.getHours();
+          var minutes = now.getMinutes();
+          var ampm = hours >= 12 ? "PM" : "AM";
+          hours = hours % 12;
+          hours = hours ? hours : 12; // Handle midnight
+          minutes = minutes < 10 ? "0" + minutes : minutes; // Add leading zero
+          return hours + ":" + minutes + " " + ampm;
+        }
       });
     </script>
   </body>

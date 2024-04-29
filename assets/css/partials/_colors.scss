@@ -3,9 +3,11 @@
 $theme-colors: (
   primary: #826cf4,
   lightPrimary: #d4cbf7,
+  lightPrimary2: #e6e2fd,
   secondary: #401675,
   lightSecondary: #c0b2d1,
   danger: #f00,
+  lightDanger: #EB5757,
   grayLight: #a8a8a8,
   midGrey: #5e5e5e,
   darkWhite: #f6f4f8,
@@ -14,7 +16,7 @@ $theme-colors: (
   selectionBg: #000,
   selectionColor: #fff,
   scrollTrackBg: #f1f1f1,
-  scrollThumbBg: #888,
+  scrollThumbBg: #b2b2b2,
   scrollThumbHoverBg: #555,
 );
 

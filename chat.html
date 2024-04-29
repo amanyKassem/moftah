@@ -156,7 +156,7 @@
                 <li>
                   <a class="dropdown-item" href="profile.html">الملف الشخصي</a>
                 </li>
-                <li>
+                <li class="active">
                   <a class="dropdown-item" href="chat.html">محادثاتي</a>
                 </li>
                 <li>
@@ -199,11 +199,8 @@
                   الصفحة الرئيسية</a
                 >
               </li>
-              <li class="breadcrumb-item">
-                <a href="product.html" class="text-midGrey"> تفاصيل التصميم</a>
-              </li>
               <li class="breadcrumb-item active text-black" aria-current="page">
-                <h1 class="fs-16 fw-500 d-inline-block">إضافة للسلة</h1>
+                <h1 class="fs-16 fw-500 d-inline-block">محادثاتي</h1>
               </li>
             </ol>
           </div>
@@ -211,216 +208,166 @@
       </header>
       <!-- end header -->
 
-      <!-- start add to cart -->
+      <!-- start cart -->
       <section class="py-4">
         <div class="container">
-          <form action="" class="mx-auto white-form">
-            <div class="bg-white mb-3 px-md-5">
-              <h3 class="fw-500 fs-5 mb-4 text-black">خيارات الشراء</h3>
-              <div class="row">
-                <div class="col-md-6 col-lg-8">
-                  <div class="form-check mb-3">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="option1"
-                      checked
-                    />
-                    <label class="form-check-label" for="option1">
-                      مخطط معماري فقط
-                      <img
-                        data-bs-toggle="modal"
-                        data-bs-target="#optionsModal"
-                        src="assets/img/info-circle.svg"
-                        alt="info"
-                        class="cursor-pointer ms-2"
-                        width="20"
-                      />
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
-                <div class="col-md-6 col-lg-8">
-                  <div class="form-check mb-3">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="option2"
-                    />
-                    <label class="form-check-label" for="option2">
-                      مخطط معماري متكامل
-                      <img
-                        data-bs-toggle="modal"
-                        data-bs-target="#optionsModal"
-                        src="assets/img/info-circle.svg"
-                        alt="info"
-                        class="cursor-pointer ms-2"
-                        width="20"
-                      />
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
-                <div class="col-md-6 col-lg-8">
-                  <div class="form-check mb-3">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="option2"
-                    />
-                    <label class="form-check-label" for="option2">
-                      مخطط شامل
-                      <img
-                        data-bs-toggle="modal"
-                        data-bs-target="#optionsModal"
-                        src="assets/img/info-circle.svg"
-                        alt="info"
-                        class="cursor-pointer ms-2"
-                        width="20"
-                      />
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="bg-white mb-3 px-md-5">
-              <h3 class="fw-500 fs-5 mb-4 text-black">اختر الاضافات</h3>
-              <div class="row">
-                <div class="col-md-6 col-lg-8">
-                  <div class="form-check mb-3">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="check1"
-                    />
-                    <label class="form-check-label" for="check1">
-                      إصدار رخصة بناء
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
-                <div class="col-md-6 col-lg-8">
-                  <div class="form-check mb-3">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="check2"
-                    />
-                    <label class="form-check-label" for="check2">
-                      الحصول على نسخة ورقية
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="bg-white mb-3 px-md-5">
-              <h3 class="fw-500 fs-5 mb-4 text-black">اختر الاضافات</h3>
-              <div class="row">
-                <div class="col-md-6 col-lg-8">
-                  <h6 class="text-black fw-500 fs-14">السعر النهائي</h6>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <span class="fs-18 text-primary mb-3 d-block"
-                    >150.00 ر.س</span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <button
-              type="button"
-              class="add-to-cart btn btn-primary w-fit fs-14 mx-auto"
+          <div class="mx-auto white-form mb-4">
+            <div
+              class="bg-white px-3 px-md-5 py-0 border border-primary rounded-3"
             >
-              إضافة للسلة
-            </button>
-          </form>
+              <a
+                href="conversation.html"
+                class="chat-item pt-3 d-flex flex-column align-items-center flex-md-row align-items-md-start"
+              >
+                <div class="flex-shrink-0 mb-4 mb-md-0">
+                  <img
+                    src="assets/img/img_avatar.png"
+                    class="user-img"
+                    alt="user image"
+                  />
+                </div>
+                <div class="flex-grow-1 ms-md-3">
+                  <div
+                    class="d-flex align-items-center justify-content-between flex-wrap mb-2 mb-md-4"
+                  >
+                    <h6 class="mb-3 me-3 text-black">محمد أحمد</h6>
+                    <span
+                      class="mb-3 text-midGrey fs-14 d-flex align-items-center"
+                    >
+                      <i class="fa-regular fa-clock text-midGrey me-2"></i>
+                      منذ 5 ساعات
+                    </span>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between flex-wrap"
+                  >
+                    <span class="mb-3 text-midGrey fs-14 me-3"
+                      >أهلا بك أستاذ محمد سررت جدا بمحادثتك</span
+                    >
+                    <span
+                      class="mb-3 text-midGrey fs-14 d-flex align-items-center"
+                    >
+                      18:57 2023/12/27
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="conversation.html"
+                class="chat-item pt-3 d-flex flex-column align-items-center flex-md-row align-items-md-start"
+              >
+                <div class="flex-shrink-0 mb-4 mb-md-0">
+                  <img
+                    src="assets/img/img_avatar.png"
+                    class="user-img"
+                    alt="user image"
+                  />
+                </div>
+                <div class="flex-grow-1 ms-md-3">
+                  <div
+                    class="d-flex align-items-center justify-content-between flex-wrap mb-2 mb-md-4"
+                  >
+                    <h6 class="mb-3 me-3 text-black">محمد أحمد</h6>
+                    <span
+                      class="mb-3 text-midGrey fs-14 d-flex align-items-center"
+                    >
+                      <i class="fa-regular fa-clock text-midGrey me-2"></i>
+                      منذ 5 ساعات
+                    </span>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between flex-wrap"
+                  >
+                    <span class="mb-3 text-midGrey fs-14 me-3"
+                      >أهلا بك أستاذ محمد سررت جدا بمحادثتك</span
+                    >
+                    <span
+                      class="mb-3 text-midGrey fs-14 d-flex align-items-center"
+                    >
+                      18:57 2023/12/27
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="conversation.html"
+                class="chat-item pt-3 d-flex flex-column align-items-center flex-md-row align-items-md-start"
+              >
+                <div class="flex-shrink-0 mb-4 mb-md-0">
+                  <img
+                    src="assets/img/img_avatar.png"
+                    class="user-img"
+                    alt="user image"
+                  />
+                </div>
+                <div class="flex-grow-1 ms-md-3">
+                  <div
+                    class="d-flex align-items-center justify-content-between flex-wrap mb-2 mb-md-4"
+                  >
+                    <h6 class="mb-3 me-3 text-black">محمد أحمد</h6>
+                    <span
+                      class="mb-3 text-midGrey fs-14 d-flex align-items-center"
+                    >
+                      <i class="fa-regular fa-clock text-midGrey me-2"></i>
+                      منذ 5 ساعات
+                    </span>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between flex-wrap"
+                  >
+                    <span class="mb-3 text-midGrey fs-14 me-3"
+                      >أهلا بك أستاذ محمد سررت جدا بمحادثتك</span
+                    >
+                    <span
+                      class="mb-3 text-midGrey fs-14 d-flex align-items-center"
+                    >
+                      18:57 2023/12/27
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="conversation.html"
+                class="chat-item pt-3 d-flex flex-column align-items-center flex-md-row align-items-md-start"
+              >
+                <div class="flex-shrink-0 mb-4 mb-md-0">
+                  <img
+                    src="assets/img/img_avatar.png"
+                    class="user-img"
+                    alt="user image"
+                  />
+                </div>
+                <div class="flex-grow-1 ms-md-3">
+                  <div
+                    class="d-flex align-items-center justify-content-between flex-wrap mb-2 mb-md-4"
+                  >
+                    <h6 class="mb-3 me-3 text-black">محمد أحمد</h6>
+                    <span
+                      class="mb-3 text-midGrey fs-14 d-flex align-items-center"
+                    >
+                      <i class="fa-regular fa-clock text-midGrey me-2"></i>
+                      منذ 5 ساعات
+                    </span>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between flex-wrap"
+                  >
+                    <span class="mb-3 text-midGrey fs-14 me-3"
+                      >أهلا بك أستاذ محمد سررت جدا بمحادثتك</span
+                    >
+                    <span
+                      class="mb-3 text-midGrey fs-14 d-flex align-items-center"
+                    >
+                      18:57 2023/12/27
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
-
-      <!-- options modal -->
-      <div
-        class="modal fade"
-        id="optionsModal"
-        tabindex="-1"
-        aria-labelledby="optionsModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header border-0 justify-content-center">
-              <h5 class="modal-title" id="optionsModalLabel">مخطط معماري</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body px-md-5">
-              <p class="lh-lg fs-14 text-center text-midGrey">
-                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو
-                مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن
-                أن يستبدل في نفس المساحة في نفس المساحة هذا النص هو مثال لنص
-                يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن
-                يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس
-                المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا
-                النص هو مثال لنص يمكن أن يستبدل في نفس المساحة في نفس
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- success modal -->
-      <div
-        class="modal fade"
-        id="successCartModal"
-        tabindex="-1"
-        aria-labelledby="successCartModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div
-              class="modal-body d-flex flex-column align-items-center justify-content-center py-5"
-            >
-              <i class="fa-solid fa-circle-check mb-4 text-primary fs-70"></i>
-              <p class="text-center mb-0 text-midGrey lh-lg fs-14">
-                تم إضافة التصميم للسلة بنجاح
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- end add to cart -->
+      <!-- end cart -->
     </main>
     <!-- end page unique content -->
 
@@ -535,16 +482,5 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
     <script src="assets/js/scripts.js"></script>
-    <script>
-      $(document).ready(function () {
-        // Show modal when button is clicked
-        $(".add-to-cart").click(function () {
-          $("#successCartModal").modal("show");
-          setTimeout(function () {
-            window.location.href = "cart.html";
-          }, 1200);
-        });
-      });
-    </script>
   </body>
 </html>
