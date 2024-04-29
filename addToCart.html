@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<!-- if english add lang="en" dir="ltr" -->
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Home</title>
+    <link rel="shortcut icon" href="assets/img/logo.svg" />
+
+    <!-- bootstrap 5 if english -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- bootstrap 5 if arabic -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      async
+    />
+
+    <link
+      rel="stylesheet"
+      media="all"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--  Start nav  -->
+    <nav class="normal-nav">
+      <div class="container">
+        <div
+          class="menu-bar d-flex d-md-none justify-content-between align-items-center"
+        >
+          <a href="index.html">
+            <img
+              src="assets/img/logo.svg"
+              data-src="assets/img/logo.svg"
+              class="logo lazyload"
+              alt="logo"
+            />
+          </a>
+          <div class="toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="menu d-flex flex-wrap align-items-center">
+          <a href="index.html" class="d-none d-md-block">
+            <img
+              src="assets/img/logo.svg"
+              data-src="assets/img/logo.svg"
+              class="logo lazyload"
+              alt="moftah"
+            />
+          </a>
+
+          <ul class="menu-links">
+            <li>
+              <a href="index.html">الرئيسية</a>
+            </li>
+            <li>
+              <a href="ourDesigns.html">تصاميمنا</a>
+            </li>
+            <li>
+              <a href="priceOffers.html">عرض سعر</a>
+            </li>
+            <li>
+              <a href="designByUrSelf.html">صمم بنفسك</a>
+            </li>
+            <li>
+              <a href="myOrders.html">طلباتي</a>
+            </li>
+            <li>
+              <a href="myPurchases.html">مشترياتي</a>
+            </li>
+            <li>
+              <a href="joinUs.html">انضم إلينا</a>
+            </li>
+          </ul>
+
+          <div
+            class="user-info d-flex align-items-center justify-content-between flex-wrap"
+          >
+            <!-- if not logged in -->
+            <!-- <a href="login.html" class="login-btn fs-13">
+              <img src="assets/img/user.svg" class="me-2" alt="user" />
+              تسجيل دخول
+            </a> -->
+            <!-- if logged in -->
+            <a href="cart.html" class="icon-btn">
+              <img src="assets/img/cart.svg" alt="cart" />
+            </a>
+
+            <a href="notifications.html" class="icon-btn mx-3">
+              <img src="assets/img/bell.svg" alt="notifications" />
+              <span class="pulse"></span>
+            </a>
+
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle no-arrow icon-btn"
+                href="#"
+                role="button"
+                id="user"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="assets/img/user.svg" alt="user info" />
+              </a>
+
+              <ul class="dropdown-menu fs-13" aria-labelledby="user">
+                <li>
+                  <a class="dropdown-item" href="profile.html">الملف الشخصي</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="chat.html">محادثاتي</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="wallet.html">المحفظة</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="fav.html">المفضلة</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="settings.html">الاعدادات</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-danger" href="login.html"
+                    >تسجيل خروج</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--end nav-->
+
+    <!-- start page unique content -->
+    <main>
+      <!-- start header -->
+      <header class="py-4">
+        <div class="container">
+          <div aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item">
+                <a href="index.html" class="text-midGrey">
+                  <img
+                    src="assets/img/home.svg"
+                    width="18"
+                    alt="home"
+                    class="me-2"
+                  />
+                  الصفحة الرئيسية</a
+                >
+              </li>
+              <li class="breadcrumb-item">
+                <a href="product.html" class="text-midGrey"> تفاصيل التصميم</a>
+              </li>
+              <li class="breadcrumb-item active text-black" aria-current="page">
+                <h1 class="fs-14 fw-normal d-inline-block">إضافة للسلة</h1>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+
+      <!-- start add to cart -->
+      <section class="py-5">
+        <div class="container">
+          <form action="" class="mx-auto white-form">
+            <div class="bg-white mb-3 px-md-5">
+              <h3 class="fw-normal fs-5 mb-4 text-black">خيارات الشراء</h3>
+              <div class="row">
+                <div class="col-md-6 col-lg-8">
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="option1"
+                      checked
+                    />
+                    <label class="form-check-label" for="option1">
+                      مخطط معماري فقط
+                      <img
+                        data-bs-toggle="modal"
+                        data-bs-target="#optionsModal"
+                        src="assets/img/info-circle.svg"
+                        alt="info"
+                        class="cursor-pointer ms-2"
+                        width="20"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <span class="fs-18 text-primary mb-3 d-block"
+                    >150.00 ر.س</span
+                  >
+                </div>
+                <div class="col-md-6 col-lg-8">
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="option2"
+                    />
+                    <label class="form-check-label" for="option2">
+                      مخطط معماري متكامل
+                      <img
+                        data-bs-toggle="modal"
+                        data-bs-target="#optionsModal"
+                        src="assets/img/info-circle.svg"
+                        alt="info"
+                        class="cursor-pointer ms-2"
+                        width="20"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <span class="fs-18 text-primary mb-3 d-block"
+                    >150.00 ر.س</span
+                  >
+                </div>
+                <div class="col-md-6 col-lg-8">
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="option2"
+                    />
+                    <label class="form-check-label" for="option2">
+                      مخطط شامل
+                      <img
+                        data-bs-toggle="modal"
+                        data-bs-target="#optionsModal"
+                        src="assets/img/info-circle.svg"
+                        alt="info"
+                        class="cursor-pointer ms-2"
+                        width="20"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <span class="fs-18 text-primary mb-3 d-block"
+                    >150.00 ر.س</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mb-3 px-md-5">
+              <h3 class="fw-normal fs-5 mb-4 text-black">اختر الاضافات</h3>
+              <div class="row">
+                <div class="col-md-6 col-lg-8">
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="check1"
+                    />
+                    <label class="form-check-label" for="check1">
+                      إصدار رخصة بناء
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <span class="fs-18 text-primary mb-3 d-block"
+                    >150.00 ر.س</span
+                  >
+                </div>
+                <div class="col-md-6 col-lg-8">
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="check2"
+                    />
+                    <label class="form-check-label" for="check2">
+                      الحصول على نسخة ورقية
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <span class="fs-18 text-primary mb-3 d-block"
+                    >150.00 ر.س</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mb-3 px-md-5">
+              <h3 class="fw-normal fs-5 mb-4 text-black">اختر الاضافات</h3>
+              <div class="row">
+                <div class="col-md-6 col-lg-8">
+                  <h6 class="text-black fw-normal fs-14">السعر النهائي</h6>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <span class="fs-18 text-primary mb-3 d-block"
+                    >150.00 ر.س</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="addToCart btn btn-primary w-fit fs-14 mx-auto"
+            >
+              إضافة للسلة
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- options modal -->
+      <div
+        class="modal fade"
+        id="optionsModal"
+        tabindex="-1"
+        aria-labelledby="optionsModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0 justify-content-center">
+              <h5 class="modal-title" id="optionsModalLabel">مخطط معماري</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body px-md-5">
+              <p class="lh-lg fs-14 text-center text-midGrey">
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو
+                مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن
+                أن يستبدل في نفس المساحة في نفس المساحة هذا النص هو مثال لنص
+                يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن
+                يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا
+                النص هو مثال لنص يمكن أن يستبدل في نفس المساحة في نفس
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- success modal -->
+      <div
+        class="modal fade"
+        id="successCartModal"
+        tabindex="-1"
+        aria-labelledby="successCartModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div
+              class="modal-body d-flex flex-column align-items-center justify-content-center py-5"
+            >
+              <i class="fa-solid fa-circle-check mb-4 text-primary fs-70"></i>
+              <p class="text-center mb-0 text-midGrey lh-lg fs-14">
+                تم إضافة التصميم للسلة بنجاح
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- end add to cart -->
+    </main>
+    <!-- end page unique content -->
+
+    <!-- start footer -->
+    <footer>
+      <div class="border-bottom border-white py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 mb-5 mb-md-0">
+              <img src="assets/img/logo.svg" alt="logo" class="footer-logo" />
+            </div>
+
+            <div class="col-md-3 mb-5 mb-md-0">
+              <h6 class="text-white mb-3 fw-normal">روابط سريعة</h6>
+              <ul class="fs-14">
+                <li class="mb-3">
+                  <a href="index.html" class="white-link d-inline-flex"
+                    >الرئيسية</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a href="compare.html" class="white-link d-inline-flex"
+                    >المقارنة</a
+                  >
+                </li>
+                <li>
+                  <a href="contactUs.html" class="white-link d-inline-flex"
+                    >تواصل معنا</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-5 mb-md-0">
+              <h6 class="text-white mb-3 fw-normal">كن شريك لنا</h6>
+              <ul class="fs-14">
+                <li class="mb-3">
+                  <a href="about.html" class="white-link d-inline-flex"
+                    >عن الموقع</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a href="faq.html" class="white-link d-inline-flex"
+                    >الأسئلة المتكررة</a
+                  >
+                </li>
+                <li>
+                  <a href="terms.html" class="white-link d-inline-flex"
+                    >الشروط والأحكام</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h6 class="text-white mb-3 fw-normal">تابعنا على</h6>
+              <div class="social">
+                <a href="https://twitter.com"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="https://tiktok.com"
+                  ><i class="fa-brands fa-tiktok"></i
+                ></a>
+                <a href="https://facebook.com"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="https://instagram.com"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://snapchat.com"
+                  ><i class="fa-brands fa-snapchat"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p
+          class="d-flex justify-content-center flex-wrap text-center p-3 text-white fs-13 mb-0 lh-lg"
+        >
+          تصميم وبرمجة شركة
+          <a href="aait.sa" class="white-link mx-1">أوامر الشبكة</a> - جميع
+          الحقوق محفوظة للشركة منصة مفتاح للتسويق الالكتروني
+        </p>
+      </div>
+    </footer>
+
+    <!-- start floating whatsapp -->
+    <a href="https://wa.me/+966500000000" class="whatsapp">
+      <img src="assets/img/whatsapp.svg" alt="whatsapp" />
+    </a>
+    <!-- end floating whatsapp -->
+
+    <!-- start scroll-top-->
+    <div id="scroll-top" class="text-center">
+      <i class="fas fa-angle-up"></i>
+    </div>
+    <!-- end scroll-top-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap 5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Show modal when button is clicked
+        $(".addToCart").click(function () {
+          $("#successCartModal").modal("show");
+          setTimeout(function () {
+            window.location.href = "cart.html";
+          }, 1000);
+        });
+      });
+    </script>
+  </body>
+</html>

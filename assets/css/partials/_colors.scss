@@ -1,0 +1,100 @@
+/* colors */
+
+$theme-colors: (
+  primary: #826cf4,
+  lightPrimary: #d4cbf7,
+  secondary: #401675,
+  lightSecondary: #c0b2d1,
+  danger: #f00,
+  grayLight: #a8a8a8,
+  midGrey: #5e5e5e,
+  darkWhite: #f6f4f8,
+  formControlBg: #f2f2f2,
+
+  selectionBg: #000,
+  selectionColor: #fff,
+  scrollTrackBg: #f1f1f1,
+  scrollThumbBg: #888,
+  scrollThumbHoverBg: #555,
+);
+
+// Tint a color: mix a color with white
+@function tint-color($color, $weight) {
+  @return mix(white, $color, $weight);
+}
+
+// Shade a color: mix a color with black
+@function shade-color($color, $weight) {
+  @return mix(black, $color, $weight);
+}
+
+@each $color, $value in $theme-colors {
+  .btn-light-#{$color},
+  .bg-light-#{$color} {
+    // color: $value !important;
+    background-color: tint-color($value, 20%) !important;
+  }
+
+  .btn-outline-#{$color} {
+    color: $value !important;
+    background-color: #fff;
+    border-color: $value !important;
+
+    &:hover,
+    &:focus {
+      box-shadow: inset 0 -4.25em 0 0 $value !important;
+      color: #fff !important;
+    }
+  }
+
+  .btn-#{$color},
+  .bg-#{$color} {
+    // color: $value !important;
+    background-color: $value !important;
+    border-color: $value !important;
+  }
+
+  .btn-gradient-#{$color},
+  .bg-gradient-#{$color} {
+    background-image: linear-gradient(
+      to right,
+      shade-color($value, 22%),
+      tint-color($value, 5%)
+    ) !important;
+  }
+
+  .border-light-#{$color} {
+    border-color: tint-color($value, 20%) !important;
+  }
+
+  .border-#{$color} {
+    border-color: $value !important;
+  }
+
+  .text-light-#{$color} {
+    color: tint-color($value, 20%) !important;
+  }
+
+  .text-#{$color} {
+    color: $value !important;
+  }
+
+  .btn-light-#{$color} {
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $value !important;
+      color: tint-color($value, 20%) !important;
+    }
+  }
+
+  .btn-#{$color} {
+    color: #fff !important;
+    border-color: $value !important;
+    &:focus,
+    &:hover {
+      color: $value !important;
+      box-shadow: inset 0 -4.25em 0 0 #fff !important;
+    }
+  }
+}

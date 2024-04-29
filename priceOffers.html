@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<!-- if english add lang="en" dir="ltr" -->
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Home</title>
+    <link rel="shortcut icon" href="assets/img/logo.svg" />
+
+    <!-- bootstrap 5 if english -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- bootstrap 5 if arabic -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      async
+    />
+
+    <link
+      rel="stylesheet"
+      media="all"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--  Start nav  -->
+    <nav class="normal-nav">
+      <div class="container">
+        <div
+          class="menu-bar d-flex d-md-none justify-content-between align-items-center"
+        >
+          <a href="index.html">
+            <img
+              src="assets/img/logo.svg"
+              data-src="assets/img/logo.svg"
+              class="logo lazyload"
+              alt="logo"
+            />
+          </a>
+          <div class="toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="menu d-flex flex-wrap align-items-center">
+          <a href="index.html" class="d-none d-md-block">
+            <img
+              src="assets/img/logo.svg"
+              data-src="assets/img/logo.svg"
+              class="logo lazyload"
+              alt="moftah"
+            />
+          </a>
+
+          <ul class="menu-links">
+            <li>
+              <a href="index.html">الرئيسية</a>
+            </li>
+            <li>
+              <a href="ourDesigns.html">تصاميمنا</a>
+            </li>
+            <li class="active">
+              <a href="priceOffers.html">عرض سعر</a>
+            </li>
+            <li>
+              <a href="designByUrSelf.html">صمم بنفسك</a>
+            </li>
+            <li>
+              <a href="myOrders.html">طلباتي</a>
+            </li>
+            <li>
+              <a href="myPurchases.html">مشترياتي</a>
+            </li>
+            <li>
+              <a href="joinUs.html">انضم إلينا</a>
+            </li>
+          </ul>
+
+          <div
+            class="user-info d-flex align-items-center justify-content-between flex-wrap"
+          >
+            <!-- if not logged in -->
+            <!-- <a href="login.html" class="login-btn fs-13">
+              <img src="assets/img/user.svg" class="me-2" alt="user" />
+              تسجيل دخول
+            </a> -->
+            <!-- if logged in -->
+            <a href="cart.html" class="icon-btn">
+              <img src="assets/img/cart.svg" alt="cart" />
+            </a>
+
+            <a href="notifications.html" class="icon-btn mx-3">
+              <img src="assets/img/bell.svg" alt="notifications" />
+              <span class="pulse"></span>
+            </a>
+
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle no-arrow icon-btn"
+                href="#"
+                role="button"
+                id="user"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="assets/img/user.svg" alt="user info" />
+              </a>
+
+              <ul class="dropdown-menu fs-13" aria-labelledby="user">
+                <li>
+                  <a class="dropdown-item" href="profile.html">الملف الشخصي</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="chat.html">محادثاتي</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="wallet.html">المحفظة</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="fav.html">المفضلة</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="settings.html">الاعدادات</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-danger" href="login.html"
+                    >تسجيل خروج</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--end nav-->
+
+    <!-- start page unique content -->
+    <main>
+      <!-- start header -->
+      <header class="py-4">
+        <div class="container">
+          <div aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item">
+                <a href="index.html" class="text-midGrey">
+                  <img
+                    src="assets/img/home.svg"
+                    width="18"
+                    alt="home"
+                    class="me-2"
+                  />
+                  الصفحة الرئيسية</a
+                >
+              </li>
+              <li class="breadcrumb-item active text-black" aria-current="page">
+                <h1 class="fs-14 fw-normal d-inline-block">اطلب عرض سعر</h1>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+
+      <!-- start offer price -->
+      <section class="py-5 linear-gradient">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h3 class="mb-3 text-white fw-normal fs-5">طلب عرض سعر</h3>
+              <p class="text-white lh-lg mb-3">
+                إن لم تجد ما تبحث عنه.. اطلب عرض سعر بالتصميم المطلوب وتفاصيله
+                ويصلك كما تريد
+              </p>
+            </div>
+
+            <div class="col-md-6 d-flex justify-content-center">
+              <img
+                src="assets/img/priceOffer.svg"
+                alt="vector"
+                class="vector"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <form action="" class="mx-auto white-form">
+            <div class="bg-white mb-3">
+              <h3 class="mb-3 fw-normal fs-5 text-center text-primary">
+                أدخل بيانات الطلب
+              </h3>
+
+              <div class="mb-3">
+                <label for="service" class="form-label"
+                  >نوع الخدمة <span class="text-danger">*</span></label
+                >
+
+                <select
+                  id="service"
+                  class="select2 w-100"
+                  data-placeholder="اختر نوع الخدمة"
+                >
+                  <option label="اختر نوع الخدمة"></option>
+                  <option value="service1">خدمة 1</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="order-details" class="form-label"
+                  >تفاصيل الطلب <span class="text-danger">*</span></label
+                >
+                <textarea
+                  class="form-control"
+                  id="order-details"
+                  rows="5"
+                  placeholder="أدخل تفاصيل الطلب"
+                ></textarea>
+              </div>
+
+              <div class="input-group mb-3">
+                <label class="form-label"
+                  >صور <span class="text-danger">*</span></label
+                >
+                <span class="upload-imgs">
+                  <img src="assets/img/imgs.svg" alt="upload" />
+                </span>
+                <div class="custom-file w-100">
+                  <input
+                    type="file"
+                    class="custom-file-input"
+                    id="custom-imgs"
+                    multiple
+                    accept=".jpg, .jpeg, .png, .gif"
+                  />
+                  <label class="custom-file-label" for="custom-imgs"
+                    >ارفع صور</label
+                  >
+                </div>
+              </div>
+
+              <div class="input-group mb-3">
+                <label class="form-label"
+                  >ملفات <span class="text-danger">*</span></label
+                >
+                <span class="upload-files">
+                  <img src="assets/img/files.svg" alt="upload" />
+                </span>
+                <div class="custom-file w-100">
+                  <input
+                    type="file"
+                    class="custom-file-input"
+                    id="custom-files"
+                    multiple
+                    accept=".pdf , .doc, .docx, .ppt, .pptx, .xlsx, .xls"
+                  />
+                  <label class="custom-file-label" for="custom-files"
+                    >ارفع ملفات</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white mb-3 pb-2">
+              <div
+                class="fw-normal fs-5 text-primary d-flex align-items-center justify-content-between flex-wrap"
+              >
+                <span class="mb-3">مصاريف الطلب:</span>
+                <span class="mb-3">250 ر.س</span>
+              </div>
+            </div>
+            <div class="bg-white mb-3">
+              <h3 class="fw-normal fs-5 text-primary mb-3">
+                اختر طريقة الدفع:
+              </h3>
+
+              <div class="form-check custom-radio-img mb-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="wallet"
+                  checked
+                />
+                <label class="form-check-label" for="wallet">
+                  <img
+                    src="assets/img/wallet.svg"
+                    alt="wallet"
+                    width="18"
+                    class="me-2"
+                  />
+                  محفظة (المتاح: 250 ريال سعودي)
+                </label>
+              </div>
+              <div class="form-check custom-radio-img mb-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="online"
+                />
+                <label class="form-check-label" for="online">
+                  <img
+                    src="assets/img/card.svg"
+                    alt="card"
+                    width="18"
+                    class="me-2"
+                  />
+                  الكتروني
+                </label>
+              </div>
+            </div>
+
+            <div class="form-check mb-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="terms"
+              />
+              <label class="form-check-label" for="terms">
+                <a href="terms.html" class="text-primary fs-14 text-primary"
+                  >موافق على
+                  <span class="ms-1 text-decoration-underline"
+                    >الشروط والأحكام</span
+                  ></a
+                >
+              </label>
+            </div>
+
+            <button
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#priceOfferModal"
+              class="btn btn-primary w-fit fs-14 mx-auto"
+            >
+              إتمام الدفع
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- price modal -->
+      <div
+        class="modal fade"
+        id="priceOfferModal"
+        tabindex="-1"
+        aria-labelledby="priceOfferModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div
+              class="modal-body d-flex flex-column align-items-center justify-content-center py-5"
+            >
+              <i class="fa-solid fa-circle-check mb-4 text-primary fs-70"></i>
+              <p class="text-center mb-0 text-midGrey lh-lg fs-14">
+                تم إرسال طلب عرض سعر بنجاح
+                <br />
+                ستتلقى عروض أسعار عند موافقة مقدمي الخدمة
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- end offer price -->
+    </main>
+    <!-- end page unique content -->
+
+    <!-- start footer -->
+    <footer>
+      <div class="border-bottom border-white py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 mb-5 mb-md-0">
+              <img src="assets/img/logo.svg" alt="logo" class="footer-logo" />
+            </div>
+
+            <div class="col-md-3 mb-5 mb-md-0">
+              <h6 class="text-white mb-3 fw-normal">روابط سريعة</h6>
+              <ul class="fs-14">
+                <li class="mb-3">
+                  <a href="index.html" class="white-link d-inline-flex"
+                    >الرئيسية</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a href="compare.html" class="white-link d-inline-flex"
+                    >المقارنة</a
+                  >
+                </li>
+                <li>
+                  <a href="contactUs.html" class="white-link d-inline-flex"
+                    >تواصل معنا</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-5 mb-md-0">
+              <h6 class="text-white mb-3 fw-normal">كن شريك لنا</h6>
+              <ul class="fs-14">
+                <li class="mb-3">
+                  <a href="about.html" class="white-link d-inline-flex"
+                    >عن الموقع</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a href="faq.html" class="white-link d-inline-flex"
+                    >الأسئلة المتكررة</a
+                  >
+                </li>
+                <li>
+                  <a href="terms.html" class="white-link d-inline-flex"
+                    >الشروط والأحكام</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h6 class="text-white mb-3 fw-normal">تابعنا على</h6>
+              <div class="social">
+                <a href="https://twitter.com"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="https://tiktok.com"
+                  ><i class="fa-brands fa-tiktok"></i
+                ></a>
+                <a href="https://facebook.com"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="https://instagram.com"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://snapchat.com"
+                  ><i class="fa-brands fa-snapchat"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p
+          class="d-flex justify-content-center flex-wrap text-center p-3 text-white fs-13 mb-0 lh-lg"
+        >
+          تصميم وبرمجة شركة
+          <a href="aait.sa" class="white-link mx-1">أوامر الشبكة</a> - جميع
+          الحقوق محفوظة للشركة منصة مفتاح للتسويق الالكتروني
+        </p>
+      </div>
+    </footer>
+
+    <!-- start floating whatsapp -->
+    <a href="https://wa.me/+966500000000" class="whatsapp">
+      <img src="assets/img/whatsapp.svg" alt="whatsapp" />
+    </a>
+    <!-- end floating whatsapp -->
+
+    <!-- start scroll-top-->
+    <div id="scroll-top" class="text-center">
+      <i class="fas fa-angle-up"></i>
+    </div>
+    <!-- end scroll-top-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap 5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+      $(document).ready(function () {
+        // select2
+        $(".select2").select2({
+          width: "100%",
+        });
+
+        $(".upload-imgs").click(function () {
+          $("#custom-imgs").click();
+        });
+
+        $(".upload-files").click(function () {
+          $("#custom-files").click();
+        });
+
+        $("#custom-imgs , #custom-files").change(function (e) {
+          var files = e.target.files;
+          var label = $(this).next(".custom-file-label");
+          if (files.length === 1) {
+            label.text(files[0].name);
+          } else {
+            label.text(files.length + " ملفات مختارة");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<!-- if english add lang="en" dir="ltr" -->
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Home</title>
+    <link rel="shortcut icon" href="assets/img/logo.svg" />
+
+    <!-- bootstrap 5 if english -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- bootstrap 5 if arabic -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      async
+    />
+
+    <link
+      rel="stylesheet"
+      media="all"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="top-bar bg-secondary py-2 fs-13">
+      <div
+        class="container d-flex justify-content-between align-items-center flex-wrap"
+      >
+        <a href="#" class="white-link">
+          <i class="fa-solid fa-globe me-2"></i>
+          English
+        </a>
+
+        <a href="index.html" class="white-link">الرئيسية</a>
+      </div>
+    </div>
+
+    <!-- start page unique content -->
+    <main>
+      <!-- start register -->
+      <section class="row g-0 auth flex-column-reverse flex-md-row">
+        <div class="col-md-6 bg-darkWhite">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center min-vh-100 py-5"
+          >
+            <h1 class="text-center text-primary mb-4 fs-5">إنشاء حساب</h1>
+            <p class="text-center text-midGrey mb-5 fs-14">
+              من فضلك أدخل بياناتك
+            </p>
+            <form
+              action="registerVerificationCode.html"
+              method="post"
+              class="main-form"
+            >
+              <label for="profile" class="form-label text-center"
+                >صورة <span class="text-danger">*</span></label
+              >
+              <div class="change-img mx-auto mb-4">
+                <img
+                  src="assets/img/user.png"
+                  loading="lazy"
+                  class="w-100 h-100 img-uploaded"
+                  alt="profile"
+                />
+                <input
+                  id="profile"
+                  class="file-upload"
+                  type="file"
+                  accept="image/*"
+                  required
+                />
+                <div class="placeholder-text flex-center flex-column">
+                  <img src="assets/img/upload.svg" alt="upload" />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="username" class="form-label"
+                  >اسم المستخدم <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  placeholder="أدخل اسم المستخدم"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label"
+                  >رقم الجوال <span class="text-danger">*</span></label
+                >
+                <div class="input-phone d-flex align-items-center">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone"
+                    placeholder="أدخل رقم الجوال"
+                    required
+                  />
+                  <select class="country-select">
+                    <!-- Options will be dynamically populated here -->
+                  </select>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label"
+                  >البريد الالكتروني <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  placeholder="أدخل البريد الالكتروني"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="city" class="form-label"
+                  >المدينة <span class="text-danger">*</span></label
+                >
+
+                <select
+                  id="city"
+                  class="select2 w-100"
+                  data-placeholder="اختر المدينة"
+                >
+                  <option label="اختر المدينة"></option>
+                  <option value="mansoura">المنصورة</option>
+                </select>
+              </div>
+
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="terms"
+                />
+                <label class="form-check-label" for="terms">
+                  <a href="terms.html" class="text-primary fs-13 text-secondary"
+                    >موافق على
+                    <span class="ms-1 text-decoration-underline"
+                      >الشروط والأحكام</span
+                    ></a
+                  >
+                </label>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-secondary w-fit fs-14 mx-auto"
+              >
+                إنشاء حساب
+              </button>
+              <span class="mx-auto d-block my-3 fs-13 text-black">أو</span>
+              <button
+                class="btn btn-outline-primary text-primary w-fit fs-14 mx-auto mb-4"
+              >
+                دخول بجوجل
+                <img
+                  src="assets/img/google.webp"
+                  loading="lazy"
+                  width="20"
+                  height="20"
+                  class="ms-3"
+                  alt="google"
+                />
+              </button>
+              <a href="login.html" class="mx-auto fs-13">
+                بالفعل لديك حساب؟
+                <span class="text-secondary ms-1 text-decoration-underline"
+                  >تسجيل دخول</span
+                >
+              </a>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6 auth-bg"></div>
+      </section>
+      <!-- end register -->
+    </main>
+    <!-- end page unique content -->
+
+    <!-- start scroll-top-->
+    <div id="scroll-top" class="text-center">
+      <i class="fas fa-angle-up"></i>
+    </div>
+    <!-- end scroll-top-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap 5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+      $(document).ready(function () {
+        // upload profile image
+        var readURL = function (input, myUpload) {
+          if (input.files && input.files[0]) {
+            let reader = new FileReader();
+            reader.onload = function (e) {
+              myUpload.prev("img").attr("src", e.target.result);
+              if (e.target.result) {
+                $(".placeholder-text ").hide();
+                $(".img-uploaded ").show();
+              }
+            };
+
+            reader.readAsDataURL(input.files[0]);
+          }
+        };
+
+        $(".file-upload").on("change", function () {
+          readURL(this, $(this));
+        });
+
+        // select2
+        $(".select2").select2({
+          width: "100%",
+        });
+
+        // Dummy data for demonstration
+        var countryData = [
+          {
+            id: "+20",
+            text: "Egypt",
+            image: "https://www.worldometers.info/img/flags/eg-flag.gif",
+          },
+          {
+            id: "+1",
+            text: "United States",
+            image: "https://www.worldometers.info/img/flags/us-flag.gif",
+          },
+          {
+            id: "+1",
+            text: "Canada",
+            image: "https://www.worldometers.info/img/flags/ca-flag.gif",
+          },
+          {
+            id: "+44",
+            text: "United Kingdom",
+            image: "https://www.worldometers.info/img/flags/uk-flag.gif",
+          },
+          // Add more countries as needed
+        ];
+
+        // Initialize Select2
+        $(".country-select").select2({
+          data: countryData,
+          templateResult: formatCountry,
+          templateSelection: formatCountrySelection,
+        });
+
+        // Custom formatting function for displaying country with image and code
+        function formatCountry(country) {
+          if (!country.id) {
+            return country.text;
+          }
+          var $country = $(
+            "<span>" +
+              ' <img src="' +
+              country.image +
+              '" width="18" height="13" /> ' +
+              country.id +
+              "</span>"
+          );
+          return $country;
+        }
+
+        // Custom formatting function for displaying selected country
+        function formatCountrySelection(country) {
+          if (!country.id) {
+            return country.text;
+          }
+          var $country = $(
+            "<span>" +
+              ' <img src="' +
+              country.image +
+              '"width="18" height="13" /> ' +
+              country.id +
+              "</span>"
+          );
+          return $country;
+        }
+      });
+    </script>
+  </body>
+</html>
