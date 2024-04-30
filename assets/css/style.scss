@@ -475,12 +475,33 @@ html[lang="en"] {
   }
 }
 
-.hidden-more{
+.hidden-more {
   display: none;
 }
 // end chat
 
+// start order
 
+.order-card {
+  @include mixins.border-radius(10px);
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  .pro-img {
+    max-width: 100%;
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: top center;
+    @include mixins.border-radius(5px);
+    &.less-height{
+      height: 80px;
+      width: 155px;
+    }
+  }
+}
+
+// end order
 
 /* Start Media Query */
 

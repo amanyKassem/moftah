@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<!-- if english add lang="en" dir="ltr" -->
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Home</title>
+    <link rel="shortcut icon" href="assets/img/logo.svg" />
+
+    <!-- bootstrap 5 if english -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- bootstrap 5 if arabic -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      async
+    />
+
+    <link
+      rel="stylesheet"
+      media="all"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--  Start nav  -->
+    <nav class="normal-nav">
+      <div class="container">
+        <div
+          class="menu-bar d-flex d-md-none justify-content-between align-items-center"
+        >
+          <a href="index.html">
+            <img
+              src="assets/img/logo.svg"
+              data-src="assets/img/logo.svg"
+              class="logo lazyload"
+              alt="logo"
+            />
+          </a>
+          <div class="toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="menu d-flex flex-wrap align-items-center">
+          <a href="index.html" class="d-none d-md-block">
+            <img
+              src="assets/img/logo.svg"
+              data-src="assets/img/logo.svg"
+              class="logo lazyload"
+              alt="moftah"
+            />
+          </a>
+
+          <ul class="menu-links">
+            <li>
+              <a href="index.html">الرئيسية</a>
+            </li>
+            <li>
+              <a href="ourDesigns.html">تصاميمنا</a>
+            </li>
+            <li>
+              <a href="priceOffers.html">عرض سعر</a>
+            </li>
+            <li>
+              <a href="designByUrSelf.html">صمم بنفسك</a>
+            </li>
+            <li>
+              <a href="myOrders.html">طلباتي</a>
+            </li>
+            <li>
+              <a href="myPurchases.html">مشترياتي</a>
+            </li>
+            <li>
+              <a href="joinUs.html">انضم إلينا</a>
+            </li>
+          </ul>
+
+          <div
+            class="user-info d-flex align-items-center justify-content-between flex-wrap"
+          >
+            <!-- if not logged in -->
+            <!-- <a href="login.html" class="login-btn fs-13">
+              <img src="assets/img/user.svg" class="me-2" alt="user" />
+              تسجيل دخول
+            </a> -->
+            <!-- if logged in -->
+            <a href="cart.html" class="icon-btn">
+              <img src="assets/img/cart.svg" alt="cart" />
+            </a>
+
+            <a href="notifications.html" class="icon-btn mx-3">
+              <img src="assets/img/bell.svg" alt="notifications" />
+              <span class="pulse"></span>
+            </a>
+
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle no-arrow icon-btn"
+                href="#"
+                role="button"
+                id="user"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="assets/img/user.svg" alt="user info" />
+              </a>
+
+              <ul class="dropdown-menu fs-13" aria-labelledby="user">
+                <li>
+                  <a class="dropdown-item" href="profile.html">الملف الشخصي</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="chat.html">محادثاتي</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="wallet.html">المحفظة</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="fav.html">المفضلة</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="settings.html">الاعدادات</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-danger" href="login.html"
+                    >تسجيل خروج</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--end nav-->
+
+    <!-- start page unique content -->
+    <main>
+      <!-- start header -->
+      <header class="py-4">
+        <div class="container">
+          <div aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item">
+                <a href="index.html" class="text-midGrey">
+                  <img
+                    src="assets/img/home.svg"
+                    width="18"
+                    alt="home"
+                    class="me-2"
+                  />
+                  الصفحة الرئيسية</a
+                >
+              </li>
+              <li class="breadcrumb-item">
+                <a href="myOrders.html" class="text-midGrey"
+                  >طلبات شراء بتعديل</a
+                >
+              </li>
+              <li class="breadcrumb-item active text-black" aria-current="page">
+                <h1 class="fs-16 fw-500 d-inline-block">تفصايل الطلب</h1>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+
+      <!-- start order details -->
+      <section class="py-4">
+        <div class="container">
+          <div class="w-90 mx-auto">
+            <div class="bg-white mb-4 p-2 p-md-3 w-70 mx-auto rounded-3">
+              <div class="progress-steps">
+                <div class="step completed">
+                  <div class="circle-shape">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <span class="mt-3 fs-13">انتظار</span>
+                </div>
+                <div class="step completed">
+                  <div class="circle-shape">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <span class="mt-3 fs-13">قيد الاتفاق</span>
+                </div>
+                <div class="step active">
+                  <div class="circle-shape"></div>
+                  <span class="mt-3 fs-13">قيد الدفع</span>
+                </div>
+                <div class="step">
+                  <div class="circle-shape"></div>
+                  <span class="mt-3 fs-13">جاري العمل</span>
+                </div>
+                <div class="step">
+                  <div class="circle-shape"></div>
+                  <span class="mt-3 fs-13">منتهي</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="fw-500 fs-6 mb-3 text-black w-75 mx-auto">
+              تفاصيل التصميم المطلوب التعديل عليه
+            </h3>
+            <div
+              class="order-card d-flex flex-column flex-md-row align-items-stretch bg-white p-3 mx-auto mb-3 max-auto w-75"
+            >
+              <div class="flex-shrink-0">
+                <img
+                  src="assets/img/product1.png"
+                  alt="product image"
+                  class="pro-img mx-auto mb-3 mb-md-0 d-block less-height"
+                />
+              </div>
+              <div
+                class="flex-grow-1 ms-md-3 w-100 d-flex flex-column justify-content-between"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-between flex-wrap fs-16"
+                >
+                  <span class="text-black mb-3 me-2"> (مفتاح - 001) </span>
+                  <span class="text-secondary mb-3">250.00 ر.س</span>
+                </div>
+
+                <div
+                  class="d-flex align-items-center justify-content-between flex-wrap fs-14"
+                >
+                  <span class="mb-3 mb-md-0 me-2 text-secondary"
+                    >الشركة الهندسية</span
+                  >
+                  <span class="mb-3 mb-md-0 text-black"
+                    >المساحات (240,220,200)</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="bg-white mb-3 p-3 pb-0 w-75 mx-auto rounded-3">
+              <h3 class="fw-500 fs-5 mb-4 text-black">الخيارات</h3>
+              <div
+                class="fs-6 d-flex align-items-center justify-content-between flex-wrap"
+              >
+                <span class="mb-3 me-3">مخطط معماري فقط</span>
+                <span class="mb-3 text-primary">250 ر.س</span>
+              </div>
+            </div>
+            <div class="bg-white mb-3 p-3 pb-0 w-75 mx-auto rounded-3">
+              <h3 class="fw-500 fs-5 mb-4 text-black">الاضافات</h3>
+              <div
+                class="fs-6 d-flex align-items-center justify-content-between flex-wrap"
+              >
+                <span class="mb-3 me-3">إصدار رخصة بناء</span>
+                <span class="mb-3 text-primary">250 ر.س</span>
+              </div>
+              <div
+                class="fs-6 d-flex align-items-center justify-content-between flex-wrap"
+              >
+                <span class="mb-3 me-3">الحصول على نسخة ورقية</span>
+                <span class="mb-3 text-primary">250 ر.س</span>
+              </div>
+            </div>
+
+            <h3 class="fw-500 fs-6 mb-3 text-black w-75 mx-auto">
+              تفاصيل مقدم الخدمة
+            </h3>
+            <div class="bg-white mb-3 p-3 w-75 mx-auto rounded-3">
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/img/img_avatar.png"
+                  alt="user"
+                  class="custom-img"
+                />
+                <div
+                  class="ms-3 d-flex align-items-center justify-content-between w-100 flex-wrap"
+                >
+                  <div class="mb-3 mb-md-0 me-3">
+                    <h6 class="fs-14 fw-500 mb-3">محمد أحمد</h6>
+                    <div class="text-midGrey">
+                      4.8
+                      <img
+                        src="assets/img/star.svg"
+                        alt="star"
+                        class="ms-2"
+                        width="18"
+                      />
+                    </div>
+                  </div>
+
+                  <a
+                    href="conversation.html"
+                    class="btn btn-lightPrimary mw-auto px-4"
+                  >
+                    <img
+                      src="assets/img/msg.svg"
+                      alt="chat"
+                      width="20"
+                      class="me-2"
+                    />
+                    محادثة
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h3 class="fw-500 fs-6 mb-3 text-black w-75 mx-auto">
+              تفاصيل التعديل
+            </h3>
+            <div class="bg-white mb-3 p-3 w-75 mx-auto rounded-3">
+              <h4 class="fw-500 fs-14 mb-3 text-black">ملاحظات</h4>
+              <p class="text-midGrey lh-lg fs-13 p-3 border mb-3 rounded-3">
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو
+                مثال لنص يمكن أن يستبدل هذا النص هو مثال لنص يمكن أن يستبدل في
+                نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل هذا النص هو مثال
+                لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن
+                يستبدل
+              </p>
+              <h4 class="fw-500 fs-14 mb-3 text-black">صور</h4>
+              <div class="border mb-3 rounded-3 p-3 pb-0">
+                <img
+                  src="assets/img/product1.png"
+                  alt="user"
+                  class="custom-img mb-3 me-3"
+                />
+                <img
+                  src="assets/img/product2.png"
+                  alt="user"
+                  class="custom-img mb-3 me-3"
+                />
+                <img
+                  src="assets/img/product3.png"
+                  alt="user"
+                  class="custom-img mb-3 me-3"
+                />
+                <img
+                  src="assets/img/product1.png"
+                  alt="user"
+                  class="custom-img mb-3 me-3"
+                />
+                <img
+                  src="assets/img/product2.png"
+                  alt="user"
+                  class="custom-img mb-3 me-3"
+                />
+                <img
+                  src="assets/img/product3.png"
+                  alt="user"
+                  class="custom-img mb-3 me-3"
+                />
+              </div>
+            </div>
+
+            <!-- in pay phase -->
+            <div class="bg-white mb-3 p-3 px-md-5 w-75 mx-auto rounded-3">
+              <h3 class="fw-500 fs-5 text-primary mb-4">اختر طريقة الدفع:</h3>
+
+              <div class="form-check custom-radio-img mb-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="wallet"
+                  checked
+                />
+                <label class="form-check-label" for="wallet">
+                  <img
+                    src="assets/img/wallet.svg"
+                    alt="wallet"
+                    width="18"
+                    class="me-2"
+                  />
+                  محفظة (المتوفر: 250 ريال سعودي)
+                </label>
+              </div>
+              <div class="form-check custom-radio-img mb-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="online"
+                />
+                <label class="form-check-label" for="online">
+                  <img
+                    src="assets/img/card.svg"
+                    alt="card"
+                    width="18"
+                    class="me-2"
+                  />
+                  الكتروني
+                </label>
+              </div>
+            </div>
+
+            <!-- in pay phase -->
+            <div class="bg-white mb-3 p-3 px-md-5 w-75 mx-auto rounded-3">
+              <h3 class="fw-500 fs-5 text-primary mb-4">هل لديك كوبون خصم؟</h3>
+
+              <div class="input-group mb-3 border p-2 rounded-3 w-75 mx-auto">
+                <input
+                  type="text"
+                  class="form-control bg-white"
+                  placeholder="أدخل الكود"
+                  aria-label="enter code"
+                  aria-describedby="coupon"
+                />
+                <button
+                  class="btn btn-primary px-3 mw-auto"
+                  type="button"
+                  id="coupon"
+                >
+                  تفعيل
+                </button>
+              </div>
+            </div>
+
+            <!-- in pay phase -->
+            <div class="bg-white mb-3 px-3 py-0 w-75 mx-auto rounded-3">
+              <h3 class="fw-500 fs-5 text-black mb-3 border-bottom py-3">
+                ملخص الطلب
+              </h3>
+              <div
+                class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom flex-wrap text-midGrey"
+              >
+                <span class="me-3">سعر التعديل</span>
+                200.00 ر.س
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom flex-wrap text-midGrey"
+              >
+                <span class="me-3">طريقة الدفع</span>
+                الكتروني
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom flex-wrap text-midGrey"
+              >
+                <span class="me-3">كوبون الخصم</span>
+                30.00 ر.س
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mb-3 pb-3 flex-wrap text-primary"
+              >
+                <span class="me-3">السعر الإجمالي</span>
+                220.00 ر.س
+              </div>
+            </div>
+
+            <!-- in pay phase -->
+            <div class="bg-white mb-3 p-3 pb-0 w-75 mx-auto rounded-3">
+              <div
+                class="fs-6 fw-500 d-flex align-items-center justify-content-between flex-wrap"
+              >
+                <span class="mb-3 me-3">موعد الانتهاء من تسليم الخدمة </span>
+                <span class="mb-3 text-secondary">250 ر.س</span>
+              </div>
+            </div>
+
+            <!-- in progress phase -->
+            <div class="bg-white mb-3 px-3 py-0 w-75 mx-auto rounded-3">
+              <h3 class="fw-500 fs-5 text-black mb-3 border-bottom py-3">
+                ملفات
+              </h3>
+              <div
+                class="d-flex justify-content-between align-items-center pb-3 flex-wrap text-midGrey"
+              >
+                <span class="me-3">
+                  <img
+                    src="assets/img/document.svg"
+                    width="18"
+                    alt="file"
+                    class="me-2"
+                  />
+                  ملف تصميم.pdf
+                </span>
+                <a href="#" download="#">
+                  <img
+                    src="assets/img/document-download.svg"
+                    width="18"
+                    alt="file"
+                  />
+                </a>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center pb-3 flex-wrap text-midGrey"
+              >
+                <span class="me-3">
+                  <img
+                    src="assets/img/document.svg"
+                    width="18"
+                    alt="file"
+                    class="me-2"
+                  />
+                  ملف تصميم.pdf
+                </span>
+                <a href="#" download="#">
+                  <img
+                    src="assets/img/document-download.svg"
+                    width="18"
+                    alt="file"
+                  />
+                </a>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center pb-3 flex-wrap text-midGrey"
+              >
+                <span class="me-3">
+                  <img
+                    src="assets/img/document.svg"
+                    width="18"
+                    alt="file"
+                    class="me-2"
+                  />
+                  ملف تصميم.pdf
+                </span>
+                <a href="#" download="#">
+                  <img
+                    src="assets/img/document-download.svg"
+                    width="18"
+                    alt="file"
+                  />
+                </a>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center pb-3 flex-wrap text-midGrey"
+              >
+                <span class="me-3">
+                  <img
+                    src="assets/img/document.svg"
+                    width="18"
+                    alt="file"
+                    class="me-2"
+                  />
+                  ملف تصميم.pdf
+                </span>
+                <a href="#" download="#">
+                  <img
+                    src="assets/img/document-download.svg"
+                    width="18"
+                    alt="file"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- in finished phase -->
+            <div class="bg-white mb-3 px-3 pb-3 w-75 mx-auto rounded-3">
+              <div
+                class="border-bottom pt-3 d-flex align-items-center justify-content-between flex-wrap"
+              >
+                <h3 class="fw-500 fs-5 text-black mb-3">تقييمك</h3>
+                <div class="rating mb-3">
+                  <input
+                    type="radio"
+                    id="star5"
+                    name="rating"
+                    value="5"
+                    disabled
+                  />
+                  <label for="star5"><i class="fas fa-star"></i></label>
+                  <input
+                    type="radio"
+                    id="star4"
+                    name="rating"
+                    value="4"
+                    disabled
+                  />
+                  <label for="star4"><i class="fas fa-star"></i></label>
+                  <input
+                    type="radio"
+                    id="star3"
+                    name="rating"
+                    value="3"
+                    disabled
+                  />
+                  <label for="star3"><i class="fas fa-star"></i></label>
+                  <input
+                    type="radio"
+                    id="star2"
+                    name="rating"
+                    value="2"
+                    disabled
+                    checked
+                  />
+                  <label for="star2"><i class="fas fa-star"></i></label>
+                  <input
+                    type="radio"
+                    id="star1"
+                    name="rating"
+                    value="1"
+                    disabled
+                  />
+                  <label for="star1"><i class="fas fa-star"></i></label>
+                </div>
+              </div>
+              <p
+                class="text-midGrey lh-lg fs-13 p-3 border mb-3 rounded-3 my-3"
+              >
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو
+                مثال لنص يمكن أن يستبدل في نفس المساحة في نفس المساحة هذا النص
+                هو مثال لنص يمكن
+              </p>
+              <span class="d-block text-end text-midGrey"
+                >18:57 2023/12/27</span
+              >
+            </div>
+
+            <div class="w-75 mx-auto">
+              <!-- in waiting phase -->
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#cancelOrderModal"
+                class="btn btn-lightDanger w-fit fs-14 mx-auto mt-5 mb-3"
+              >
+                إلغاء الطلب
+              </button>
+              <!-- in pay phase -->
+              <div class="d-flex align-items-center flex-wrap mt-5">
+                <button
+                  type="button"
+                  class="btn btn-primary mw-auto mb-3 flex-grow-1 mx-1 mx-md-3"
+                >
+                  دفع
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#cancelOrderModal"
+                  class="btn btn-lightDanger mw-auto mb-3 flex-grow-1 mx-1 mx-md-3"
+                  data-bs-dismiss="modal"
+                >
+                  إلغاء الطلب
+                </button>
+              </div>
+              <!-- in progress phase -->
+              <button
+                type="button"
+                class="btn btn-primary w-fit fs-14 mx-auto mt-5 mb-3"
+              >
+                تم اعتماد الاستلام
+              </button>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#ratingModal"
+                class="btn btn-primary w-fit fs-14 mx-auto mt-5 mb-3"
+              >
+                تقييم مقدم الخدمة
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- cancel order modal -->
+      <div
+        class="modal fade"
+        id="cancelOrderModal"
+        tabindex="-1"
+        aria-labelledby="cancelOrderModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body p-3 p-md-5 pb-0">
+              <p class="fw-500 text-center fs-16 lh-lg">
+                في حالة إلغاء الطلب سوف يتم خصم نسبة من تكلفة التصميم واسترداد
+                الباقي على المحفطة
+              </p>
+
+              <img
+                src="assets/img/alert.svg"
+                alt="alert"
+                class="modal-icon my-4"
+              />
+            </div>
+            <div class="d-flex align-items-center flex-wrap px-2 px-md-5 pb-3">
+              <button
+                type="button"
+                data-bs-dismiss="modal"
+                class="cancel-order btn btn-primary mw-auto mb-3 flex-grow-1 mx-1 mx-md-3"
+              >
+                تأكيد الإلغاء
+              </button>
+              <button
+                type="button"
+                class="btn btn-lightPrimary mw-auto mb-3 flex-grow-1 mx-1 mx-md-3"
+                data-bs-dismiss="modal"
+              >
+                رجوع
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- cancel order modal -->
+      <div
+        class="modal fade"
+        id="cancelOrderConfirmModal"
+        tabindex="-1"
+        aria-labelledby="cancelOrderConfirmModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body p-3 p-md-5 pb-0">
+              <p class="fw-500 text-center fs-16 lh-lg">تم إلغاء الطلب</p>
+
+              <img
+                src="assets/img/alert.svg"
+                alt="alert"
+                class="modal-icon my-4"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- rating modal -->
+      <div
+        class="modal fade"
+        id="ratingModal"
+        tabindex="-1"
+        aria-labelledby="ratingModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0 justify-content-center">
+              <h5 class="modal-title" id="ratingModalLabel">قيم مقدم الخدمة</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <form action="">
+              <div class="modal-body p-3 p-md-5 pb-0 pb-md-0">
+                <div class="rating rating-provider mb-4 text-center">
+                  <input
+                    type="radio"
+                    id="rate5"
+                    name="rating_provider"
+                    value="5"
+                  />
+                  <label for="rate5"><i class="fas fa-star"></i></label>
+                  <input
+                    type="radio"
+                    id="rate4"
+                    name="rating_provider"
+                    value="4"
+                  />
+                  <label for="rate4"><i class="fas fa-star"></i></label>
+                  <input
+                    type="radio"
+                    id="rate3"
+                    name="rating_provider"
+                    value="3"
+                  />
+                  <label for="rate3"><i class="fas fa-star"></i></label>
+                  <input
+                    type="radio"
+                    id="rate2"
+                    name="rating_provider"
+                    value="2"
+                  />
+                  <label for="rate2"><i class="fas fa-star"></i></label>
+                  <input
+                    type="radio"
+                    id="rate1"
+                    name="rating_provider"
+                    value="1"
+                  />
+                  <label for="rate1"><i class="fas fa-star"></i></label>
+                </div>
+
+                <textarea
+                  class="form-control bg-white p-2 border mb-5"
+                  rows="3"
+                  placeholder="اكتب هنا"
+                ></textarea>
+              </div>
+              <div
+                class="d-flex align-items-center flex-wrap px-2 px-md-5 pb-3"
+              >
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#rateSuccessModal"
+                  class="btn btn-primary mw-auto mb-3 flex-grow-1 mx-1 mx-md-3"
+                >
+                  إرسال
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-lightPrimary mw-auto mb-3 flex-grow-1 mx-1 mx-md-3"
+                  data-bs-dismiss="modal"
+                >
+                  ليس الآن
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- success modal -->
+      <div
+        class="modal fade"
+        id="rateSuccessModal"
+        tabindex="-1"
+        aria-labelledby="rateSuccessModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div
+              class="modal-body d-flex flex-column align-items-center justify-content-center py-5"
+            >
+              <i class="fa-solid fa-circle-check mb-4 text-primary fs-70"></i>
+              <p class="text-center mb-0 text-midGrey lh-lg fs-14">
+                تم ارسال التقييم شكرا لك
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- end order details -->
+    </main>
+    <!-- end page unique content -->
+
+    <!-- start footer -->
+    <footer>
+      <div class="border-bottom border-white py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 mb-5 mb-md-0">
+              <img src="assets/img/logo.svg" alt="logo" class="footer-logo" />
+            </div>
+
+            <div class="col-md-3 mb-5 mb-md-0">
+              <h6 class="text-white mb-3 fw-normal">روابط سريعة</h6>
+              <ul class="fs-14">
+                <li class="mb-3">
+                  <a href="index.html" class="white-link d-inline-flex"
+                    >الرئيسية</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a href="compare.html" class="white-link d-inline-flex"
+                    >المقارنة</a
+                  >
+                </li>
+                <li>
+                  <a href="contactUs.html" class="white-link d-inline-flex"
+                    >تواصل معنا</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-5 mb-md-0">
+              <h6 class="text-white mb-3 fw-normal">كن شريك لنا</h6>
+              <ul class="fs-14">
+                <li class="mb-3">
+                  <a href="about.html" class="white-link d-inline-flex"
+                    >عن الموقع</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a href="faq.html" class="white-link d-inline-flex"
+                    >الأسئلة المتكررة</a
+                  >
+                </li>
+                <li>
+                  <a href="terms.html" class="white-link d-inline-flex"
+                    >الشروط والأحكام</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h6 class="text-white mb-3 fw-normal">تابعنا على</h6>
+              <div class="social">
+                <a href="https://twitter.com"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="https://tiktok.com"
+                  ><i class="fa-brands fa-tiktok"></i
+                ></a>
+                <a href="https://facebook.com"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="https://instagram.com"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://snapchat.com"
+                  ><i class="fa-brands fa-snapchat"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p
+          class="d-flex justify-content-center flex-wrap text-center p-3 text-white fs-13 mb-0 lh-lg"
+        >
+          تصميم وبرمجة شركة
+          <a href="aait.sa" class="white-link mx-1">أوامر الشبكة</a> - جميع
+          الحقوق محفوظة للشركة منصة مفتاح للتسويق الالكتروني
+        </p>
+      </div>
+    </footer>
+
+    <!-- start floating whatsapp -->
+    <a href="https://wa.me/+966500000000" class="whatsapp">
+      <img src="assets/img/whatsapp.svg" alt="whatsapp" />
+    </a>
+    <!-- end floating whatsapp -->
+
+    <!-- start scroll-top-->
+    <div id="scroll-top" class="text-center">
+      <i class="fas fa-angle-up"></i>
+    </div>
+    <!-- end scroll-top-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap 5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+      $(document).ready(function () {
+        // cancel ordr
+        $(".cancel-order").click(function () {
+          $("#cancelOrderConfirmModal").modal("show");
+          setTimeout(function () {
+            window.location.href = "myOrders.html";
+          }, 1200);
+        });
+
+        // rating
+
+        $(".rating-provider input").on("click", function () {
+          var rating = $(this).val();
+        });
+      });
+    </script>
+  </body>
+</html>

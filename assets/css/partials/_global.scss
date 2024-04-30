@@ -116,6 +116,9 @@ html[lang="en"] {
 .w-90 {
   width: 90%;
 }
+.w-70 {
+  width: 70%;
+}
 .p-20-80 {
   padding: 20px 80px;
 }
@@ -192,6 +195,12 @@ html[lang="en"] {
 }
 .modal {
   overflow-y: auto;
+}
+
+.modal-icon {
+  max-width: 150px;
+  display: block;
+  margin-inline: auto;
 }
 
 a,
@@ -306,6 +315,9 @@ h6 {
 
 .mw-auto {
   min-width: auto !important;
+}
+.max-auto {
+  max-width: unset !important;
 }
 
 .fs-16 {
@@ -700,6 +712,11 @@ html[lang="en"] {
   font-size: 16px;
 }
 
+.custom-img {
+  @include mixins.shape(60px);
+  @include mixins.border-radius(5px);
+}
+
 /* end common style*/
 
 /* Start nav */
@@ -971,6 +988,142 @@ html[lang="en"] {
 
 /* end upload multi images */
 
+/* start tabs */
+.nav-pills {
+  .nav-link {
+    font-size: 14px;
+    min-width: 165px;
+    max-width: 100%;
+  }
+
+  &.main-pills {
+    .nav-link {
+      border: 1px solid map_get(colors.$theme-colors, secondary);
+      color: map_get(colors.$theme-colors, secondary);
+      &.active,
+      &:hover {
+        background-color: map_get(colors.$theme-colors, secondary);
+        color: #fff;
+      }
+    }
+
+    .show {
+      > .nav-link {
+        background-color: map_get(colors.$theme-colors, secondary);
+      }
+    }
+  }
+  &.inner-pills {
+    .nav-link {
+      border: 1px solid map_get(colors.$theme-colors, primary);
+      color: map_get(colors.$theme-colors, primary);
+      &.active,
+      &:hover {
+        background-color: map_get(colors.$theme-colors, primary);
+        color: #fff;
+      }
+    }
+
+    .show {
+      > .nav-link {
+        background-color: map_get(colors.$theme-colors, primary);
+      }
+    }
+  }
+}
+
+.tab-content {
+  > .tab-pane {
+    width: 100%;
+  }
+}
+
+.progress-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .step {
+    text-align: center;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .circle-shape {
+      @include mixins.shape(30px, 50%);
+      position: relative;
+      z-index: 1;
+      border: 1px dashed map_get(colors.$theme-colors, grayLight);
+      background-color: map_get(colors.$theme-colors, grayLight);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    span {
+      color: map_get(colors.$theme-colors, grayLight);
+    }
+
+    &.active {
+      .circle-shape {
+        background-color: map_get(colors.$theme-colors, grayLight);
+        border-color: map_get(colors.$theme-colors, primary);
+        border-style: solid;
+      }
+    }
+
+    &.completed {
+      .circle-shape {
+        background-color: map_get(colors.$theme-colors, primary);
+        border-color: map_get(colors.$theme-colors, primary);
+        color: #fff;
+        &::before {
+          content: "";
+          @include mixins.shape(34px, 50%);
+          background: transparent;
+          position: absolute;
+          z-index: -7;
+          border: 1px dashed map_get(colors.$theme-colors, primary);
+          top: -3px;
+        }
+      }
+    }
+
+    &:not(:first-child) {
+      &::before {
+        content: "";
+        width: 80%;
+        border: 2px dashed map_get(colors.$theme-colors, grayLight);
+        position: absolute;
+        top: 22%;
+        right: -40%;
+      }
+    }
+  }
+}
+
+/* Color the line between completed or active steps */
+.step.completed + .step.active::before,
+.step.completed + .step.completed::before {
+  border-color: map_get(colors.$theme-colors, primary);
+}
+
+html[lang="en"] {
+  .progress-steps {
+    .step {
+      &:not(:first-child) {
+        &::before {
+          left: -40%;
+          right: auto;
+        }
+      }
+    }
+  }
+}
+
+/* end tabs */
+
 /* start product */
 
 .product {
@@ -1038,6 +1191,57 @@ html[lang="en"] {
 }
 
 /* end product */
+
+/* start rate */
+
+/* Ratings widget */
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  input {
+    display: none;
+    &:checked ~ label i {
+      color: map_get(
+        colors.$theme-colors,
+        primary
+      ); /* Color of the filled stars */
+    }
+  }
+
+  label {
+    i {
+      font-size: 24px; /* Adjust the size of the stars as needed */
+      color: #e0e0e0; /* Default color of the stars */
+    }
+  }
+
+  &.rating-provider {
+    label {
+      cursor: pointer;
+      &:hover {
+        i {
+          color: map_get(
+            colors.$theme-colors,
+            primary
+          ); /* Color of the hovered stars */
+        }
+
+        ~ label {
+          i {
+            color: map_get(
+              colors.$theme-colors,
+              primary
+            ); /* Color of the filled stars */
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* end rate */
 
 /* start footer */
 
@@ -1123,7 +1327,6 @@ html[lang="en"] {
     font-size: 40px;
   }
 
-  .fs-6,
   h5 {
     font-size: 1rem !important;
   }
@@ -1133,7 +1336,9 @@ html[lang="en"] {
     }
   }
   .fs-5,
-  h6 , .fs-16 {
+  h6,
+  .fs-6,
+  .fs-16 {
     font-size: 14px !important;
   }
   h3 {
@@ -1152,6 +1357,7 @@ html[lang="en"] {
   }
 
   .w-25,
+  .w-70,
   .w-75,
   .w-90 {
     width: 100% !important;
@@ -1236,6 +1442,12 @@ html[lang="en"] {
     }
   }
 
+  .nav-pills {
+    .nav-link {
+      font-size: 13px;
+    }
+  }
+
   .owl-nav {
     .owl-prev,
     .owl-next {
@@ -1265,6 +1477,21 @@ html[lang="en"] {
     }
   }
 
+  .modal-icon {
+    max-width: 70px;
+  }
+  .rating {
+    label {
+      i {
+        font-size: 17px;
+      }
+    }
+  }
+
+  .custom-img {
+    @include mixins.shape(50px);
+  }
+
   footer {
     text-align: center;
     .footer-logo {
@@ -1279,6 +1506,23 @@ html[lang="en"] {
   .pagination {
     .page-link {
       font-size: 12px;
+    }
+  }
+
+  .progress-steps {
+    .step {
+      .circle-shape {
+        @include mixins.shape(25px, 50%);
+      }
+
+      &.completed {
+        .circle-shape {
+          &::before {
+            content: "";
+            @include mixins.shape(29px, 50%);
+          }
+        }
+      }
     }
   }
 
