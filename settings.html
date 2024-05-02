@@ -156,7 +156,7 @@
                 <li>
                   <a class="dropdown-item" href="profile.html">الملف الشخصي</a>
                 </li>
-                <li class="active">
+                <li>
                   <a class="dropdown-item" href="chat.html">محادثاتي</a>
                 </li>
                 <li>
@@ -199,153 +199,138 @@
                   الصفحة الرئيسية</a
                 >
               </li>
-              <li class="breadcrumb-item">
-                <a href="chat.html" class="text-midGrey"> محادثاتي</a>
-              </li>
               <li class="breadcrumb-item active text-black" aria-current="page">
-                <h1 class="fs-16 fw-500 d-inline-block">تفاصيل محادثة</h1>
+                <h1 class="fs-16 fw-500 d-inline-block">الاعدادات</h1>
               </li>
             </ol>
           </div>
         </div>
       </header>
-      <!-- end header -->
+      <!-- start settings -->
 
-      <!-- start cart -->
       <section class="py-4">
         <div class="container">
-          <div class="mx-auto white-form mb-4" data-aos="zoom-in" data-aos-duration="1000">
-            <div
-              class="bg-white p-0 border border-primary rounded-3 position-relative overflow-hidden"
+          <div class="w-90 mx-auto" data-aos="zoom-in" data-aos-duration="1000">
+            <a
+              href="changeLang.html"
+              class="hover-scale bg-white px-3 py-3 w-75 mx-auto rounded-3 fs-14 d-flex justify-content-between align-items-center lh-lg mb-3"
             >
-              <a
-                href="chat.html"
-                class="fw-500 mx-md-4 p-3 text-center justify-content-center my-3 bg-lightPrimary2 text-primary rounded-3"
-              >
-                تقوم الإدارة بالإطلاع على المحادثات
-              </a>
-              <div class="px-md-4">
-                <div class="chat-container px-2">
-                  <!-- sender -->
-                  <div class="chat-message">
-                    <img
-                      src="assets/img/1.jpg"
-                      class="user-image me-3"
-                      alt="User 1"
-                    />
-                    <div class="message">
-                      <p class="fs-13">
-                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا
-                        النص هو مثال لنص يمكن أن يستبدل
-                      </p>
-                      <span class="message-date">18:57 2023/12/27</span>
-                    </div>
-                  </div>
-                  <!-- reciever -->
-                  <div class="chat-message flex-row-reverse">
-                    <img
-                      src="assets/img/img_avatar.png"
-                      class="user-image ms-3"
-                      alt="User 2"
-                    />
-                    <div class="message align-items-end">
-                      <p class="fs-13">
-                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا
-                        النص هو مثال لنص يمكن أن يستبدل
-                      </p>
-                      <span class="message-date">18:57 2023/12/27</span>
-                    </div>
-                  </div>
-                  <!-- sender -->
-                  <div class="chat-message">
-                    <img
-                      src="assets/img/1.jpg"
-                      class="user-image me-3"
-                      alt="User 1"
-                    />
-                    <div class="message">
-                      <p class="fs-13">
-                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا
-                        النص هو مثال لنص يمكن أن يستبدل
-                      </p>
-                      <span class="message-date">18:57 2023/12/27</span>
-                    </div>
-                  </div>
-                  <!-- reciever -->
-                  <div class="chat-message flex-row-reverse">
-                    <img
-                      src="assets/img/img_avatar.png"
-                      class="user-image ms-3"
-                      alt="User 2"
-                    />
-                    <div class="message align-items-end">
-                      <p class="fs-13">
-                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا
-                        النص هو مثال لنص يمكن أن يستبدل
-                      </p>
-                      <span class="message-date">18:57 2023/12/27</span>
-                    </div>
-                  </div>
-                  <!-- sender -->
-                  <div class="chat-message">
-                    <img
-                      src="assets/img/1.jpg"
-                      class="user-image me-3"
-                      alt="User 1"
-                    />
-                    <div class="message">
-                      <p class="fs-13">
-                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا
-                        النص هو مثال لنص يمكن أن يستبدل
-                      </p>
-                      <span class="message-date">18:57 2023/12/27</span>
-                    </div>
-                  </div>
-                  <!-- reciever -->
-                  <div class="chat-message flex-row-reverse">
-                    <img
-                      src="assets/img/img_avatar.png"
-                      class="user-image ms-3"
-                      alt="User 2"
-                    />
-                    <div class="message align-items-end">
-                      <p class="fs-13">
-                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا
-                        النص هو مثال لنص يمكن أن يستبدل
-                      </p>
-                      <span class="message-date">18:57 2023/12/27</span>
-                    </div>
-                  </div>
-                  <!-- More chat messages here -->
-                </div>
+              <div class="d-flex align-items-center me-2">
+                <i class="fa-solid fa-globe fs-18"></i>
+                <span class="ms-2"> اعدادات اللغة </span>
               </div>
-
-              <div class="chat-controls">
-                <button class="record-sound btn control-btn mw-auto p-0">
-                  <img src="assets/img/mic.svg" alt="record" />
-                </button>
-                <input
-                  type="text"
-                  class="message-input form-control bg-transparent me-md-2"
-                  placeholder="اكتب رسالتك..."
-                />
-                <label for="file-upload" class="upload-image me-2 me-md-3"
-                  ><img src="assets/img/cam.svg" alt="image"
-                /></label>
-                <input
-                  id="file-upload"
-                  type="file"
-                  accept="image/*"
-                  class="d-none"
-                />
-                <button class="send-button btn btn-primary">ارسال</button>
+              <i class="fa-solid fa-chevron-left rotate-180 fs-13"></i>
+            </a>
+            <a
+              href="editProfile.html"
+              class="hover-scale bg-white px-3 py-3 w-75 mx-auto rounded-3 fs-14 d-flex justify-content-between align-items-center lh-lg mb-3"
+            >
+              <div class="d-flex align-items-center me-2">
+                <i class="fa-solid fa-user fs-18"></i>
+                <span class="ms-2"> تعديل الملف الشخصي</span>
               </div>
-            </div>
+              <i class="fa-solid fa-chevron-left rotate-180 fs-13"></i>
+            </a>
+            <a
+              href="changePhone.html"
+              class="hover-scale bg-white px-3 py-3 w-75 mx-auto rounded-3 fs-14 d-flex justify-content-between align-items-center lh-lg mb-3"
+            >
+              <div class="d-flex align-items-center me-2">
+                <i class="fa-solid fa-mobile-screen-button fs-18"></i>
+                <span class="ms-2"> تغيير رقم الجوال</span>
+              </div>
+              <i class="fa-solid fa-chevron-left rotate-180 fs-13"></i>
+            </a>
+            <a
+              href="changeEmail.html"
+              class="hover-scale bg-white px-3 py-3 w-75 mx-auto rounded-3 fs-14 d-flex justify-content-between align-items-center lh-lg mb-3"
+            >
+              <div class="d-flex align-items-center me-2">
+                <i class="fa-solid fa-envelope fs-18"></i>
+                <span class="ms-2"> تغيير البريد الإلكتروني</span>
+              </div>
+              <i class="fa-solid fa-chevron-left rotate-180 fs-13"></i>
+            </a>
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#deleteAccModal"
+              class="hover-scale text-darkDanger bg-white px-3 py-3 w-75 mx-auto rounded-3 fs-14 d-flex justify-content-between align-items-center lh-lg mb-3"
+            >
+              <div class="d-flex align-items-center me-2">
+                <i class="fa-solid fa-user-xmark fs-18"></i>
+                <span class="ms-2"> حذف الحساب</span>
+              </div>
+              <i class="fa-solid fa-chevron-left rotate-180 fs-13"></i>
+            </a>
           </div>
         </div>
       </section>
+      <!-- delete account modal -->
+      <div
+        class="modal fade"
+        id="deleteAccModal"
+        tabindex="-1"
+        aria-labelledby="deleteAccModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body p-3 p-md-5 pb-0">
+              <p class="fw-500 text-center fs-16 lh-lg">
+                هل بالفعل تريد حذف الحساب؟
+              </p>
 
-      <!-- end cart -->
+              <img
+                src="assets/img/alert.svg"
+                alt="alert"
+                class="modal-icon my-4"
+              />
+            </div>
+            <div class="d-flex align-items-center flex-wrap px-2 px-md-5 pb-3">
+              <button
+                type="button"
+                data-bs-dismiss="modal"
+                class="delete-acc btn btn-lightDanger mw-auto mb-3 flex-grow-1 mx-1 mx-md-3"
+              >
+                نعم
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary mw-auto mb-3 flex-grow-1 mx-1 mx-md-3"
+                data-bs-dismiss="modal"
+              >
+                لا
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- delete account modal -->
+      <div
+        class="modal fade"
+        id="deleteAccConfirmModal"
+        tabindex="-1"
+        aria-labelledby="deleteAccConfirmModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body p-3 p-md-5 pb-0">
+              <p class="fw-500 text-center fs-16 lh-lg">تم حذف الحساب</p>
+
+              <img
+                src="assets/img/alert.svg"
+                alt="alert"
+                class="modal-icon my-4"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- end settings -->
     </main>
     <!-- end page unique content -->
 
@@ -462,84 +447,13 @@
     <script src="assets/js/scripts.js"></script>
     <script>
       $(document).ready(function () {
-        // Function to scroll chat container to the bottom
-        function scrollToBottom() {
-          var chatContainer = $(".chat-container");
-          chatContainer.animate(
-            { scrollTop: chatContainer.prop("scrollHeight") },
-            500
-          ); 
-        }
-
-        scrollToBottom();
-
-        $(".message-input").keypress(function (event) {
-          if (event.which === 13) {
-            // Check if Enter key is pressed
-            event.preventDefault(); // Prevent default form submission
-            sendMessage();
-          }
+        // cancel ordr
+        $(".delete-acc").click(function () {
+          $("#deleteAccConfirmModal").modal("show");
+          setTimeout(function () {
+            window.location.href = "index.html";
+          }, 1200);
         });
-
-        // Trigger sending message when Send button is clicked
-        $(".send-button").click(function () {
-          sendMessage();
-        });
-
-        // Function to send message
-        function sendMessage() {
-          var messageText = $(".message-input").val().trim(); // Get message text from input field
-          if (messageText !== "") {
-            // Check if message is not empty
-            addMessage("assets/img/1.jpg", messageText, getCurrentTime()); // Add message to chat
-            $(".message-input").val(""); // Clear input field after sending message
-          }
-        }
-
-        // Function to add a new message to the chat container
-        function addMessage(userImage, messageText, messageDate) {
-          if (messageText !== "") {
-            var chatMessage = $('<div class="chat-message">').appendTo(
-              ".chat-container"
-            );
-            $('<img class="user-image me-3">')
-              .attr("src", userImage)
-              .appendTo(chatMessage);
-            var messageDiv = $('<div class="message">').appendTo(chatMessage);
-            // console.log("messageText", typeof messageText);
-            if (typeof messageText == "string") {
-              $("<p  class='fs-13'>").text(messageText).appendTo(messageDiv);
-            } else {
-              $(messageText).appendTo(messageDiv); // Append message content (text or image) dynamically
-            }
-            $('<span class="message-date">')
-              .text(messageDate)
-              .appendTo(messageDiv);
-            scrollToBottom(); // Scroll to the bottom after adding a message
-          }
-        }
-        $("#file-upload").change(function () {
-          console.log("aa");
-          var file = this.files[0];
-          var imageUrl = URL.createObjectURL(file); // Generate a URL for the uploaded image
-          addMessage(
-            "assets/img/1.jpg",
-            $("<img>").attr("src", imageUrl),
-            getCurrentTime()
-          ); // Append image element as message content
-        });
-
-        // Function to get current time (for message date)
-        function getCurrentTime() {
-          var now = new Date();
-          var hours = now.getHours();
-          var minutes = now.getMinutes();
-          var ampm = hours >= 12 ? "PM" : "AM";
-          hours = hours % 12;
-          hours = hours ? hours : 12; // Handle midnight
-          minutes = minutes < 10 ? "0" + minutes : minutes; // Add leading zero
-          return hours + ":" + minutes + " " + ampm;
-        }
       });
     </script>
   </body>

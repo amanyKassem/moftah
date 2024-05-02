@@ -99,6 +99,7 @@ html[lang="en"] {
 
 ::-webkit-scrollbar {
   width: 3px;
+  height: 3px;
   @include mixins.transition(background 0.3s ease-in-out);
 }
 
@@ -193,6 +194,16 @@ html[lang="en"] {
     }
   }
 }
+.btn-lightDanger2 {
+  color: map_get(colors.$theme-colors, lightDanger) !important;
+  &:hover,
+  &:focus {
+    background-color: map_get(colors.$theme-colors, lightDanger) !important;
+    border: 1px solid map_get(colors.$theme-colors, lightDanger) !important;
+    color: #fff !important;
+    box-shadow: none !important ;
+  }
+}
 .modal {
   overflow-y: auto;
 }
@@ -260,6 +271,14 @@ a {
       &::after {
         border-color: map_get(colors.$theme-colors, secondary);
       }
+    }
+  }
+  &.hover-scale {
+    color: map_get(colors.$theme-colors, midGrey);
+    &:hover,
+    &:focus {
+      color: map_get(colors.$theme-colors, primary);
+      transform: scale(0.97);
     }
   }
 }
@@ -342,6 +361,13 @@ h6 {
 h1 {
   &.fs-5 {
     font-size: 1.4rem !important;
+  }
+}
+.big-img {
+  max-width: 280px;
+  width: 100%;
+  &.wallet {
+    max-width: 500px;
   }
 }
 
@@ -567,15 +593,20 @@ textarea {
 
     &:hover,
     &:focus {
-      background-color: map_get(colors.$theme-colors, secondary);
       img,
       i {
         filter: unset;
       }
     }
+  }
 
-    &:active {
-      border-color: #fff;
+  &.btn-primary {
+    img {
+      filter: contrast(0) invert(1) brightness(2) !important;
+    }
+    &:hover,
+    &:focus {
+      box-shadow: unset !important;
     }
   }
 }
@@ -715,6 +746,12 @@ html[lang="en"] {
 .custom-img {
   @include mixins.shape(60px);
   @include mixins.border-radius(5px);
+  object-fit: cover;
+  object-position: top center;
+  &.profile-img {
+    @include mixins.shape(100px);
+    @include mixins.border-radius(50%);
+  }
 }
 
 /* end common style*/
@@ -1129,6 +1166,15 @@ html[lang="en"] {
 .product {
   position: relative;
 
+  .info {
+    h6 {
+      text-overflow: ellipsis;
+      max-width: 72%;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+
   .side-badge {
     font-size: 11px;
     padding: 5px;
@@ -1240,7 +1286,6 @@ html[lang="en"] {
   }
 }
 
-
 /* end rate */
 
 /* start footer */
@@ -1341,6 +1386,8 @@ html[lang="en"] {
   .fs-16 {
     font-size: 14px !important;
   }
+  
+  .fs-4,
   h3 {
     font-size: 15px !important;
   }
@@ -1357,7 +1404,7 @@ html[lang="en"] {
   }
 
   .w-25,
-  .w-70,
+  .w-50,
   .w-75,
   .w-90 {
     width: 100% !important;
@@ -1465,6 +1512,24 @@ html[lang="en"] {
         }
       }
     }
+
+    .info {
+      h6 {
+        max-width: unset;
+        white-space: normal;
+      }
+    }
+  }
+
+  .compare-container {
+    .product {
+      .info {
+        h6 {
+          max-width: 72%;
+          white-space: nowrap;
+        }
+      }
+    }
   }
 
   .vector {
@@ -1490,6 +1555,9 @@ html[lang="en"] {
 
   .custom-img {
     @include mixins.shape(50px);
+    &.profile-img {
+      @include mixins.shape(80px);
+    }
   }
 
   footer {
@@ -1526,6 +1594,13 @@ html[lang="en"] {
     }
   }
 
+  .big-img {
+    max-width: 150px;
+    &.wallet {
+      max-width: 370px;
+    }
+  }
+
   html[lang="en"] {
     nav {
       .menu {
@@ -1549,6 +1624,12 @@ html[lang="en"] {
 }
 
 /*Small Screen*/
+
+@media (min-width: 768px) {
+  .me-md-8 {
+    margin-inline-end: 8rem !important;
+  }
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
   body,
@@ -1606,6 +1687,14 @@ html[lang="en"] {
   .vector {
     height: 235px;
   }
+
+  .big-img {
+    max-width: 200px;
+    &.wallet {
+      max-width: 420px;
+    }
+  }
+
   footer {
     .social {
       a {

@@ -14,8 +14,8 @@ $(document).ready(function () {
   });
 
   // toggle fav
-  $(".toggle-fav").on("click", function () {
-    $(this).find(".fa-heart").toggleClass("fw-bold");
+  $(".toggle-bg").on("click", function () {
+    $(this).toggleClass("bg-white btn-primary");
   });
 
   function initiateAnimation() {

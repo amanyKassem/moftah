@@ -69,8 +69,7 @@ header {
   @include mixins.border-radius(15px);
   position: relative;
   cursor: pointer;
-  width: 100px;
-  height: 100px;
+  @include mixins.shape(100px);
   background-color: #fff;
   border: 1px dashed map_get(colors.$theme-colors, grayLight);
 
@@ -92,6 +91,33 @@ header {
     height: 100%;
     cursor: pointer;
     z-index: 2;
+  }
+  &.profile {
+    @include mixins.border-radius(50%);
+    border-style: solid;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba($color: #000000, $alpha: 0.3);
+      @include mixins.border-radius(50%);
+    }
+    .img-uploaded {
+      @include mixins.border-radius(50%);
+      display: block;
+    }
+    .placeholder-text {
+      position: absolute;
+      bottom:5px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      filter: brightness(2);
+      z-index: 1;
+    }
   }
 }
 
@@ -252,6 +278,9 @@ html[lang="en"] {
   .form-check-input {
     float: left;
   }
+  &.p-17-20 {
+    padding: 17px 20px !important;
+  }
 }
 // end price offer
 
@@ -390,6 +419,11 @@ html[lang="en"] {
   @include mixins.shape(30px, 5px);
   font-size: 12px;
 }
+
+.remove-icon {
+  @include mixins.shape(28px, 5px);
+}
+
 html[lang="en"] {
   .remove-product {
     right: 1rem;
@@ -398,6 +432,15 @@ html[lang="en"] {
 }
 // end cart
 
+// start notification
+
+.noti {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+// end notification
 // start chat
 .chat-item {
   &:not(:last-child) {
@@ -494,7 +537,7 @@ html[lang="en"] {
     object-fit: cover;
     object-position: top center;
     @include mixins.border-radius(5px);
-    &.less-height{
+    &.less-height {
       height: 80px;
       width: 155px;
     }
@@ -502,6 +545,46 @@ html[lang="en"] {
 }
 
 // end order
+
+// start compare
+.compare-container {
+  display: grid;
+  grid-auto-columns: auto auto auto auto;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  .fs-18 {
+    font-size: 18.2px;
+  }
+  .block {
+    width: 318px;
+    padding-inline: 2px;
+    .top {
+      height: 470px;
+    }
+  }
+
+  .product {
+    height: 100%;
+    .product-carusel {
+      .item {
+        .pro-img {
+          height: 370px !important;
+        }
+      }
+    }
+  }
+}
+
+// end compare
+
+// start not robot
+.not-robot {
+  border: 1px dashed #f00;
+  img {
+    width: 40px;
+  }
+}
+// end not robot
 
 /* Start Media Query */
 
@@ -593,6 +676,21 @@ html[lang="en"] {
     .send-button {
       min-width: 100px;
       height: 35px;
+    }
+  }
+
+  .compare-container {
+    .fs-18 {
+      font-size: 13.9px !important;
+    }
+  }
+
+  .change-img {
+    @include mixins.shape(80px);
+    .placeholder-text {
+      img{
+        width: 20px;
+      }
     }
   }
 
